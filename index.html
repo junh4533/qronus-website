@@ -2,281 +2,191 @@
 <html>
 
 <head>
-  <meta charset="UTF-8">
-  <title>title</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Archivo' rel='stylesheet'>
 
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-  <!-- jQuery library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-  <!-- Popper JS-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 
-  <!-- Latest compiled JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/typewriter-effect/dist/core.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
 
-  <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/fullpage.min.css"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/fullpage.min.js"></script>
 
-  <script>
-    //smooth scrolling provided by w3schools
-    
-    $(document).ready(function() {
-      // Add smooth scrolling to all links
-      $("a").on('click', function(event) {
-
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-          // Prevent default anchor click behavior
-          event.preventDefault();
-
-          // Store hash
-          var hash = this.hash;
-
-          // Using jQuery's animate() method to add smooth page scroll
-          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-          $('html').animate({
-            scrollTop: $(hash).offset().top
-          }, 1000, function() {
-
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-          });
-        } // End if
-      });
-    });
-    
-  </script>
+    <script src="main.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="navbar.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="card.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="button.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="centerline.css">
 </head>
 
 <body>
+    <div id="fullpage">
+        <nav class="navbar navbar-expand-sm justify-content-center fill">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link hvr-underline-from-center" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hvr-underline-from-center" href="#">Committees</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hvr-underline-from-center" href="#">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navbar-brand" href="#">
+                        <img src="ascend.png" alt="Logo">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hvr-underline-from-center" href="#">E-board</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hvr-underline-from-center" href="#">Join</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hvr-underline-from-center" href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div id="tint"></div>
+        <div class="container-fluid section" id="main_content">
+            <div id="top_layer">
+                <div class="slogan">
+                    <h1>I am a </h1>
+                    <h1 id="year"></h1>
+                </div>
 
-  <nav class="navbar navbar-expand-sm fixed-top">
-    <a class="navbar-brand" href="#home">New York Historical Society</a>
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="#details">Details</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#booths">Booths</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#sponsorships">Sponsorships</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#about_us">About Us</a>
-      </li>
-    </ul>
-  </nav>
+                <div class="slogan">
+                    <h1>who wants to </h1>
+                    <h1 id="goal"></h1>
+                </div>
+                <br>
+                <button id="join_button">Join Us</button>
+                <button id="learn_button">Learn More</button>
+            </div>
 
-  <div id="home" class="parallax centerDiv">
-    <h1 class="center">Roebling Day</h1>
-    <h4 class="centerBelow">Brooklyn Bridge - Manhattan|Brooklyn Entrance <br> May 24th, 2018 <br> 10AM-10PM</h4>
 
-  </div>
+        </div>
+        <div class="container-fluid full section" id="programs">
+            <div class="flip-card" id='soon'>
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="bg.jpg" alt="Avatar" style="width:300px;height:300px;">
+                        <h1>Hover to see the next page</h1>
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Coming soon™</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-  <div class="roeblingDivider container">
+        <!-- 
+        <div class="container-fluid full section" id="eboard">
+            <h1>Our E-Board</h1>
+            <div class=row>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img class="card-img-top" src="img_avatar1.png" alt="Card image">
 
-    <h2>John Augustus Roebling</h2>
-    <h5>Architect and visionary</h5>
-    <br>
-    <p>In 1867, John Augustus Roebling introduced his his pioneering concept of the Brooklyn Bridge, which involves a steel wire suspension bridge spanning nearly 1600 feet. Despite his death prior to the construction completion of the bridge on May 24,
-      1883, his legacy is still highly regarded a century after its completion. The purpose of this event is to show appreciation for Roebling's achievements. His design of the Brooklyn Bridge has enabled cultural, technological, and infrastructural growth
-      throughout the city.
-    </p>
-  </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Louise Jiang</h4>
+                            <p class="card-text">Executive President</p>
+                        </div>
 
-  <div id="details" class="parallax">
-    <div class="container">
-      <h2>Itinerary</h2>
-      <p>The festival will follow a carnival-styled format along with several main events. There will be booths setup across the six parks where prizes will be given! </p>
-      <table class="table table-hover">
-        <thead>
-          <tr>
-            <th>Time</th>
-            <th>Event</th>
-            <th>Details</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>10:00AM</td>
-            <td>Festival begins</td>
-            <td>Enter from Brooklyn or Manhattan side of the Brooklyn Bridge. All booths are open at this time.</td>
-          </tr>
-          <tr>
-            <td>12:00PM</td>
-            <td>John A. Roebling: Archiect and Visionary</td>
-            <td>New York Historical Society gives a speech on why we celebrate Roebling Day.</td>
-          </tr>
-          <tr>
-            <td>1:00PM</td>
-            <td>New York City: Industrial Age</td>
-            <td>A play depicting NYC throughout the 1800s.</td>
-          </tr>
-          <tr>
-            <td>3:00PM</td>
-            <td>The New York Orchestra</td>
-            <td>A series of orchestrations portraying the culture of NYC in the 1800s.</td>
-          </tr>
-          <tr>
-            <td>5:00PM</td>
-            <td>Dance with the city</td>
-            <td>Everyone will have the opportunity to dance with fellow New Yorkers!</td>
-          </tr>
-          <tr>
-            <td>7:00PM</td>
-            <td>Dinner</td>
-            <td>Dinner booths will begin serving.</td>
-          </tr>
-          <tr>
-            <td>10:00PM</td>
-            <td>Festival ends</td>
-            <td></td>
-          </tr>
-        </tbody>
-      </table>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+
+                        <div class="card-body">
+                            <h4 class="card-title">Sharon Cheung</h4>
+                            <p class="card-text">Vice President of Professional</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+
+                        <div class="card-body">
+                            <h4 class="card-title">Nancy Zhang</h4>
+                            <p class="card-text">Treasurer</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class=row>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+
+                        <div class="card-body">
+                            <h4 class="card-title">Matthew Chen</h4>
+                            <p class="card-text">Vice President of Social</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+
+                        <div class="card-body">
+                            <h4 class="card-title">Sherry Chen</h4>
+                            <p class="card-text">Vice President of Membership</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-sm-3">
+
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div class="card">
+                            <img class="card-img-top" src="bg.jpg">
+
+                            <div class="card-body">
+                                <h4 class="card-title">Henry Chen</h4>
+                                <p class="card-text">Vice President of Marketing</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>Loves to sleep</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        -->
+
+        
     </div>
-
-  </div>
-
-  <div class="divider">
-    <h2>Booths</h2>
-
-
-
-  </div>
-
-  <div id="booths" class="parallax">
-    <br><br><br><br><br><br>
-
-    <div id="booth_container" class="container">
-      <div class="row">
-        <div class="col-xl-3">
-          <h4>Lobsterdamus</h4>
-          <img class="img-fluid img-thumbnail" src="Lobsterdamus.jpg">
-        </div>
-        <div class="col-xl-3">
-          <h4>Carnal</h4>
-          <img class="img-fluid img-thumbnail" src="bbq.jpg">
-        </div>
-        <div class="col-xl-3">
-          <h4>Kimchi Kooks</h4>
-          <img class="img-fluid img-thumbnail" src="kimchi.jpg">
-        </div>
-        <div class="col-xl-3">
-          <h4>Raindrop Station</h4>
-          <img class="img-fluid img-thumbnail" src="raindrop.jpg">
-        </div>
-      </div>
-      <br><br>
-      <div class="row">
-        <div class="col-xl-3">
-          <h4>Paint NYC</h4>
-          <img class="img-fluid img-thumbnail" src="painting.jpg">
-        </div>
-        <div class="col-xl-3">
-          <h4>Music for All</h4>
-          <img class="img-fluid img-thumbnail" src="music.jpg">
-        </div>
-        <div class="col-xl-3">
-          <h4>Mini Golf</h4>
-          <img class="img-fluid img-thumbnail" src="golf.jpg">
-        </div>
-        <div class="col-xl-3">
-          <h4>Trivia Day</h4>
-          <img class="img-fluid img-thumbnail" src="trivia.jpg">
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  <div class="divider">
-    <h2>Sponsorships</h2>
-  </div>
-
-  <div id="sponsorships" class="parallax">
-    <br> <br><br><br><br>
-    <div class="media border p-3">
-      <img src="dcla.jpg" class="mr-3 mt-3" style="width:10vw">
-      <div class="media-body">
-        <h4>NYC Department of Cultural Affairs (DCLA)</h4>
-        <p>The New York City Department of Cultural Affairs (DCLA) is dedicated to supporting and strengthening New York City's vibrant cultural life. Among our primary missions is to ensure adequate public funding for non-profit cultural organizations,
-          both large and small, throughout the five boroughs. DCLA also works to promote and advocate for quality arts programming and to articulate the contribution made by the cultural community to the City's economic vitality. The Department represents
-          and serves non-profit cultural organizations involved in the visual, literary and performing arts; public-oriented science and humanities institutions including zoos, botanical gardens and historic and preservation societies; and creative artists
-          at all skill levels who live and work within the City's five boroughs. Through its Materials for the Arts Program, DCLA provides free supplies for use in arts programs offered by non-profit groups and New York City public schools. DCLA has also
-          changed the physical landscape of New York City through its Percent for Art program by commissioning more than 180 works of art by some of the world's leading artists at public building sites throughout the city.
-
-        </p>
-      </div>
-    </div>
-    <div class="media border p-3">
-      <img src="dot.png" class="mr-3 mt-3" style="width:10vw">
-      <div class="media-body">
-        <h4>NYC Department of Transportation (DOT)</h4>
-        <p>DOT's mission is to provide for the safe, efficient, and environmentally responsible movement of people and goods in the City of New York and to maintain and enhance the transportation infrastructure crucial to the economic vitality and quality
-          of life of our primary customers, City residents. Our agency's work is guided by the Strategic Plan 2016: Safe - Green - Smart - Equitable. We are customer-driven in all our activities. We seek opportunities to create partnerships in the provision
-          of transportation services through appropriate relationships and alliances. </p>
-      </div>
-    </div>
-    <div class="media border p-3">
-      <img src="dpr.gif" class="mr-3 mt-3 rounded-circle" style="width:10vw; height:20vh">
-      <div class="media-body">
-        <h4>NYC Department of Parks & Recreation (DPR)</h4>
-        <p>NYC Parks is the steward of more than 30,000 acres of land — 14 percent of New York City — including more than 5,000 individual properties ranging from Coney Island Beach and Central Park to community gardens and Greenstreets. We operate more
-          than 800 athletic fields and nearly 1,000 playgrounds, 1,800 basketball courts, 550 tennis courts, 65 public pools, 51 recreational facilities, 15 nature centers, 14 golf courses, and 14 miles of beaches. We care for 1,200 monuments and 23 historic
-          house museums. We look after 600,000 street trees, and two million more in parks. We are New York City's principal providers of recreational and athletic facilities and programs. We are home to free concerts, world-class sports events, and cultural
-          festivals..
-        </p>
-      </div>
-    </div>
-
-  </div>
-
-  <div class="divider">
-    <h2>About Us</h2>
-  </div>
-
-  <div id="about_us" class="parallax">
-
-    <br><br>
-    <div class="container" style="text-align:center">
-      <p>The New-York Historical Society was established in 1804 as New York’s first museum. Its eleven founders all lived through the turbulent years of the American Revolution and the British occupation of New York. These men believed that New York’s citizens
-        needed to take decisive action to preserve eyewitness evidence of their own historical moment, which they recognized as important, fearing “dust and obscurity” would be the inevitable fate of accounts and artifacts if left in the hands of private
-        individuals. “Without the aid of original records and authentic documents,” they declared, “history will be nothing more than a well-combined series of ingenious conjectures and amusing fables.”</p>
-    </div>
-    <br><br><br><br>
-
-    <div id="about_container" class="container">
-      <div class="row">
-        <div class="col-xl-4">
-          <h4>Libraries</h4>
-          <img class="img-fluid" src="library.jpg">
-        </div>
-        <div class="col-xl-4">
-          <h4>Learning programs</h4>
-          <img class="img-fluid" src="programs.jpg">
-        </div>
-        <div class="col-xl-4">
-          <h4>Art Galleries</h4>
-          <img class="img-fluid" src="gallery.jpg">
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  <div class="footer">
-    <a href="#" class="fa fa-facebook"></a> &nbsp
-    <a href="#" class="fa fa-twitter"></a> &nbsp
-    <a href="#" class="fa fa-instagram"></a> &nbsp
-    <a href="#" class="fa fa-linkedin"></a> &nbsp
-    <a href="#" class="fa fa-youtube"></a>
-  </div>
 
 </body>
 
