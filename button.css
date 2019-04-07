@@ -3,7 +3,7 @@ button {
   color: #F19500;
   border: none;
   position: relative;
-  font-size: 100%;
+  font-size: 1em;
   transition: 800ms ease all;
   outline: none;
 }
@@ -39,13 +39,13 @@ button:hover:after {
 }
 
 #join_button {
-  height: 40px;
-  width: 150px;
+  height: 5vh;
+  width: 18vh;
   letter-spacing: 3px;
 }
 
 #learn_button {
-  height: 40px;
-  width: 150px;
+  height: 5vh;
+  width: 18vh;
   letter-spacing: 3px;
 }

@@ -8,7 +8,7 @@
 
 .nav-link {
    color: white;
-   font-size: 15px;
+   font-size: 1vmax;
 }
 
 nav ul li a {
@@ -20,7 +20,7 @@ nav ul li a {
    letter-spacing: 3px;
 }
 
-.navbar-brand>img {
+.navbar-brand img {
    width: 80px;
 }
 

@@ -1,10 +1,12 @@
+function opacity_range (val, max, min) { 
+  return (val - min) / (max - min); 
+}
+
 $(document).ready(function () {
   new fullpage('#fullpage', {
-    //options here
     autoScrolling: true,
     scrollHorizontally: true
   });
-  //methods
   // fullpage_api.setAllowScrolling(false);
 
   var line1 = document.getElementById('year');
@@ -58,4 +60,33 @@ $(document).ready(function () {
     .typeString('<strong style="color:orange">Ascend</strong>')
     .pauseFor(1500)
     .start();
+
+    // document.addEventListener('DOMContentLoaded', function() {
+      var parent = document.querySelector('#split_container'),
+          topPanel = parent.querySelector('#llp'),
+          handle = parent.querySelector('#split_divider'),
+          tint2 = document.getElementById('tint_2'),
+          tint3 = document.getElementById('tint_3'),
+          skewHack = 1000,
+          delta = 0;
+    
+      parent.addEventListener('mousemove', function(event) {
+          // Get the delta between the mouse position and center point.
+          delta = (event.clientX - window.innerWidth / 2) * 0.5;
+    
+          // Move the handle.
+          handle.style.left = event.clientX + delta + 'px';
+    
+          // Adjust the top panel width.
+          topPanel.style.width = event.clientX + skewHack + delta + 'px';
+
+          width = $(window).width();
+          tint_opacity1 = opacity_range(event.clientX,width,0);
+          tint_opacity2 = opacity_range(event.clientX,0,width);
+          tint2.style.background = `rgba(0, 0, 0, ${tint_opacity1})`;
+          tint3.style.background = `rgba(0, 0, 0, ${tint_opacity2})`;
+      });
+    // });
+    
 });
+
