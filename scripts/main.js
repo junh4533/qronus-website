@@ -65,7 +65,7 @@ $(document).ready(function () {
 
   // document.addEventListener('DOMContentLoaded', function() {
   var parent = document.querySelector('#split_container'),
-    topPanel = parent.querySelector('#professional'),
+    topPanel = parent.querySelector('#professional_panel'),
     handle = parent.querySelector('#split_divider'),
     tint2 = document.getElementById('tint_2'),
     tint3 = document.getElementById('tint_3'),
@@ -73,7 +73,7 @@ $(document).ready(function () {
     delta = 0;
 
   parent.addEventListener('mousemove', function (event) {
-    // Get the delta between the mouse position and center point.
+    // Get the delta b/w mouse position and center point.
     delta = (event.clientX - window.innerWidth / 2) * 0.5;
 
     // Move the handle.
@@ -83,8 +83,9 @@ $(document).ready(function () {
     topPanel.style.width = event.clientX + skewHack + delta + 'px';
 
     width = $(window).width();
-    tint_opacity1 = opacity_range(event.clientX, width, 0);
-    tint_opacity2 = opacity_range(event.clientX, 0, width);
+    tint_opacity1 = opacity_range(event.clientX, 0, width)*.7;
+    tint_opacity2 = opacity_range(event.clientX, width, 0)*.7;
+    // console.log(tint_opacity1)
     tint2.style.background = `rgba(0, 0, 0, ${tint_opacity1})`;
     tint3.style.background = `rgba(0, 0, 0, ${tint_opacity2})`;
   });

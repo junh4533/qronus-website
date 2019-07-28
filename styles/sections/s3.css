@@ -1,0 +1,42 @@
+#eboard {
+    height: 100vh;
+    background-image: url('../../images/geometric.jpg');
+    background-size: cover;
+    color: white;
+    z-index: -99999;
+    margin: 0 auto;
+}
+
+.profile{
+    width:250px;
+    height:300px;
+    position: relative;
+    background-image: url('../../images/eboard/henry.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.profileHeading{
+    position: absolute;
+}
+
+/* #topleft {
+    position: relative;
+    left:0;
+    top:0;
+    width: 0;
+    height: 0;
+    border-top: 100px solid rgba(0,0,0,.5);
+    border-right: 250px solid transparent;
+  }
+
+#bottomright {
+    position: absolute;
+    right:0;
+    bottom:0;
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid rgba(0,0,0,.5);
+    border-left: 250px solid transparent;
+  } */
