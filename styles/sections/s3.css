@@ -5,9 +5,31 @@
     color: white;
     z-index: -99999;
     margin: 0 auto;
+    text-align: center;
 }
 
-.profile{
+/* #eboard-heading{
+    color:#F19500;
+    font-weight: 900;
+} */
+/* .card{
+    text-align: center;
+    color:black;
+    width:
+} */
+
+.rounded-circle{
+    width:12vw;
+    height:12vw;
+}
+
+
+/* .fa{
+    font-size:1.5vw;
+    color:#F19500;
+} */
+
+/* .profile{
     width:250px;
     height:300px;
     position: relative;
@@ -19,7 +41,7 @@
 
 .profileHeading{
     position: absolute;
-}
+} */
 
 /* #topleft {
     position: relative;

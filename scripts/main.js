@@ -3,14 +3,7 @@ function opacity_range(val, max, min) {
 }
 
 $(document).ready(function () {
-  // new fullpage('#fullpage', {
-  //   // autoScrolling: true,
-  //   // navigation: true,
-  //   anchors: ['s1','s2','s3','s4'],
-  //   menu: '#menu',
-  //   slidesNavigation: true,
-  //   licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE'
-  // });
+
   $('#fullpage').fullpage();
   var line1 = document.getElementById('year');
   var line2 = document.getElementById('goal');
@@ -67,8 +60,8 @@ $(document).ready(function () {
   var parent = document.querySelector('#split_container'),
     topPanel = parent.querySelector('#professional_panel'),
     handle = parent.querySelector('#split_divider'),
-    tint2 = document.getElementById('tint_2'),
-    tint3 = document.getElementById('tint_3'),
+    tint_professional = document.getElementById('tint_professional'),
+    tint_social = document.getElementById('tint_social'),
     skewHack = 1000,
     delta = 0;
 
@@ -86,9 +79,10 @@ $(document).ready(function () {
     tint_opacity1 = opacity_range(event.clientX, 0, width)*.7;
     tint_opacity2 = opacity_range(event.clientX, width, 0)*.7;
     // console.log(tint_opacity1)
-    tint2.style.background = `rgba(0, 0, 0, ${tint_opacity1})`;
-    tint3.style.background = `rgba(0, 0, 0, ${tint_opacity2})`;
+    tint_social.style.background = `rgba(0, 0, 0, ${tint_opacity1})`;
+    tint_professional.style.background = `rgba(0, 0, 0, ${tint_opacity2})`;
   });
   // });
+
 
 });
