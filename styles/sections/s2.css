@@ -76,6 +76,9 @@
     width: calc(50vw + 1000px);
  } */
 
+ .description{
+    max-width:60vw;
+ }
 
 #professional_panel {
    z-index: 2;

@@ -1,6 +1,5 @@
 button {
   background: rgba(0, 0, 0, 0.4);
-  color: #F19500;
   border: none;
   position: relative;
   font-size: 1em;
@@ -49,3 +48,13 @@ button:hover:after {
   width: 18vh;
   letter-spacing: 3px;
 }
+
+#top_layer a{
+  text-decoration: none; 
+  color: #F19500;
+}
+
+#top_layer a:hover{
+  color: white;
+}
+

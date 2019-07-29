@@ -25,8 +25,8 @@
 }
 
 .committee_panel .content {
-    text-align: center;
     z-index: 2;
+    text-align: center;
 }
 
 .committee_panel:hover {
@@ -37,12 +37,13 @@
     background-color: rgba(0, 0, 0, 0.95);
 }
 
-.committee_panel p {
+.content p {
     position: relative;
-    max-width: 25vw;
+    max-width: 15vw;
     visibility: hidden;
     top: 0;
     transition: top .8s ease;
+    color:white;
 }
 
 .committee_panel:hover p {
