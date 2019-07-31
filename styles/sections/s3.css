@@ -3,7 +3,7 @@
     background-image: url('../../images/geometric.jpg');
     background-size: cover;
     color: white;
-    z-index: -99999;
+    /* z-index: -99999; */
     margin: 0 auto;
     text-align: center;
 }
@@ -21,6 +21,10 @@
 .rounded-circle{
     width:25vh;
     height:25vh;
+}
+
+#eboard-heading{
+    z-index:9999;
 }
 
 
