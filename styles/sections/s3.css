@@ -3,66 +3,16 @@
     background-image: url('../../images/geometric.jpg');
     background-size: cover;
     color: white;
-    /* z-index: -99999; */
     margin: 0 auto;
     text-align: center;
+
 }
 
-/* #eboard-heading{
-    color:#F19500;
-    font-weight: 900;
-} */
-/* .card{
-    text-align: center;
-    color:black;
-    width:
-} */
-
+.row-eboard, #eboard-heading{
+    position: relative;
+    z-index:999;
+}
 .rounded-circle{
     width:25vh;
     height:25vh;
 }
-
-#eboard-heading{
-    z-index:9999;
-}
-
-
-/* .fa{
-    font-size:1.5vw;
-    color:#F19500;
-} */
-
-/* .profile{
-    width:250px;
-    height:300px;
-    position: relative;
-    background-image: url('../../images/eboard/henry.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.profileHeading{
-    position: absolute;
-} */
-
-/* #topleft {
-    position: relative;
-    left:0;
-    top:0;
-    width: 0;
-    height: 0;
-    border-top: 100px solid rgba(0,0,0,.5);
-    border-right: 250px solid transparent;
-  }
-
-#bottomright {
-    position: absolute;
-    right:0;
-    bottom:0;
-    width: 0;
-    height: 0;
-    border-bottom: 100px solid rgba(0,0,0,.5);
-    border-left: 250px solid transparent;
-  } */

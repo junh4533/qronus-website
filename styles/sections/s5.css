@@ -1,17 +1,31 @@
-.carousel-inner{
-    z-index:-99999999;
+#programs {
+    background: url('../../images/geometric4.jpg');
+    height: 100vh;
+    background-size: cover;
+    color: black;
+    text-align: center;
+    /* display:flex; */
 }
-.carousel-item img{
-    width:100vw;
-    height:100vh;
-    /* z-index:-1000; */
+.row-programs {
+    position: relative;
+    z-index: 999;
+    margin:auto;
+    top: 10vh;
 }
 
-/* .fa-angle-left, .fa-angle-right{
-    color: #F19500;
-    font-size:3vw;
+.row-programs .section-heading{
+    font-size: 3.5vw;
 }
-*/
-.carousel-indicators li {
-    background-color: #F19500;
-} 
+
+#llp-description{
+    color:white;
+    font-size: 1.5vw;
+}
+
+.card {
+    position: relative;
+    /* display:block; */
+    margin:auto;
+    z-index: 999;
+    width: 25vw;
+}

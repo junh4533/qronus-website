@@ -1,0 +1,18 @@
+.footer{
+    position: absolute;
+    display:block;
+    width:100vw;
+    height:4vh;
+    background: rgba(241, 149, 0, 0.884);
+    left:0;
+    bottom:0;
+    text-align: center;
+    z-index: 999;
+}
+.footer a, p{
+    display: inline-block;
+    font-size:150%;
+}
+.footer a{
+    color: white;
+}
