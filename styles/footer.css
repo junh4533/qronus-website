@@ -11,8 +11,13 @@
 }
 .footer a, p{
     display: inline-block;
-    font-size:150%;
+    font-size:100%;
 }
 .footer a{
     color: white;
+    text-decoration: none;
 }
+
+/* .footer a:hover{
+    color: white;
+} */

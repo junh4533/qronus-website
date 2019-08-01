@@ -5,10 +5,19 @@ button {
   font-size: 1em;
   transition: 800ms ease all;
   outline: none;
+
+  height: 5vh;
+  width: 18vh;
+  letter-spacing: 3px;
 }
 
-button:hover {
+button:hover{
   background: rgba(0, 0, 0, .8);
+  color: white;
+}
+
+button a:hover {
+  text-decoration: none;
   color: white;
 }
 
@@ -37,17 +46,20 @@ button:hover:after {
   transition: 800ms ease all;
 }
 
-#join_button {
-  height: 5vh;
-  width: 18vh;
-  letter-spacing: 3px;
+button a{
+  color:#F19500;
+  text-decoration: none;
+}
+
+/* #join_button {
+  
 }
 
 #learn_button {
   height: 5vh;
   width: 18vh;
   letter-spacing: 3px;
-}
+} */
 
 #top_layer a{
   text-decoration: none; 

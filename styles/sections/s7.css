@@ -4,8 +4,36 @@
     background-size: cover;
     color: black;
     text-align: center;
+    color:white;
 }
 
 #join .tint{
     background: rgba(0, 0, 0, .7);
+}
+
+#join .row{
+    position: relative;
+    z-index:999;
+    top:15vh;
+    list-style-type: square;
+}
+
+.member{
+    background-color: rgba(0,0,0, 0.7);
+    /* background-image: linear-gradient(to bottom right, rgba(19, 18, 18, 0.7), rgba(66, 66, 66, .7)); */
+    /* background-image: url('../../images/gradient.png'); */
+    background-size: cover;
+
+}
+.member:hover{
+    background-color: rgba(66, 66, 66, 0.219);
+    /* background-color: rgba(241, 149, 0, 0.2); */
+}
+
+.member h3{
+ color: #F19500;
+}
+
+.member li{
+    list-style: none;
 }
