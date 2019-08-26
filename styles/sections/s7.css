@@ -28,6 +28,7 @@
 
 .member div {
     background-color: rgba(0,0,0, 0.7);
+    height:100%;
     /* margin: 15 0 15 0; */
     /* margin: 15px 15px 15px 15px; */
 }
@@ -46,4 +47,9 @@
 
 .member li{
     list-style: none;
+}
+
+.member button{
+    position: relative;
+    bottom:0;
 }

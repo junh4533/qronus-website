@@ -1,3 +1,15 @@
+#events{
+    background: url('../../images/geometric4.jpg');
+}
+
+.verticalhorizontal {
+    display: table-cell;
+    height: 100vh;
+    text-align: center;
+    width: 100vw;
+    vertical-align: middle;
+}
+
 .carousel-inner{
     z-index:-99999999;
 }
