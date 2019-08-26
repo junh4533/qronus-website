@@ -3,7 +3,6 @@
     height: 100vh;
     background-size: cover;
     color: black;
-    text-align: center;
     color:white;
 }
 
@@ -19,19 +18,30 @@
 }
 
 .member{
-    background-color: rgba(0,0,0, 0.7);
+        text-align: center;
+
     /* background-image: linear-gradient(to bottom right, rgba(19, 18, 18, 0.7), rgba(66, 66, 66, .7)); */
     /* background-image: url('../../images/gradient.png'); */
-    background-size: cover;
+    /* background-size: cover; */
 
 }
-.member:hover{
+
+.member div {
+    background-color: rgba(0,0,0, 0.7);
+    /* margin: 15 0 15 0; */
+    /* margin: 15px 15px 15px 15px; */
+}
+.member div:hover{
     background-color: rgba(66, 66, 66, 0.219);
     /* background-color: rgba(241, 149, 0, 0.2); */
 }
 
 .member h3{
  color: #F19500;
+}
+
+.member ul{
+    padding-left:0;
 }
 
 .member li{

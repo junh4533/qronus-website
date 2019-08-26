@@ -76,13 +76,11 @@ $(document).ready(function () {
     topPanel.style.width = event.clientX + skewHack + delta + 'px';
 
     width = $(window).width();
-    tint_opacity1 = opacity_range(event.clientX, 0, width)*.7;
-    tint_opacity2 = opacity_range(event.clientX, width, 0)*.7;
+    tint_opacity1 = opacity_range(event.clientX, 0, width) * .7;
+    tint_opacity2 = opacity_range(event.clientX, width, 0) * .7;
     // console.log(tint_opacity1)
     tint_social.style.background = `rgba(0, 0, 0, ${tint_opacity1})`;
     tint_professional.style.background = `rgba(0, 0, 0, ${tint_opacity2})`;
   });
-  // });
-
 
 });
