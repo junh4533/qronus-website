@@ -7,18 +7,13 @@
 
 .row-programs {
     position: relative;
-    z-index: 999;
     margin:auto;
     top: 10vh;
 }
 
-
 #programs-carousel{
-    z-index:99999999;
-}
-.carousel-inner{
-    z-index:99999999;
-}
+    z-index:999999;
+} 
 
 .carousel-indicators li {
     background-color: #F19500;
