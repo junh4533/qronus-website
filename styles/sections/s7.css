@@ -1,55 +1,57 @@
-#join{
+#join {
     background: url('../../images/geometric3.jpg');
     height: 100vh;
     background-size: cover;
     color: black;
-    color:white;
+    color: white;
 }
 
-#join .tint{
+#join .tint {
     background: rgba(0, 0, 0, .7);
 }
 
-#join .row{
+#join .row {
     position: relative;
-    z-index:999;
-    top:15vh;
+    z-index: 999;
+    top: 10vh;
     list-style-type: square;
 }
 
-.member{
-        text-align: center;
-
-    /* background-image: linear-gradient(to bottom right, rgba(19, 18, 18, 0.7), rgba(66, 66, 66, .7)); */
-    /* background-image: url('../../images/gradient.png'); */
-    /* background-size: cover; */
-
+.member {
+    text-align: center;
 }
 
 .member div {
-    background-color: rgba(0,0,0, 0.7);
-    height:100%;
-    /* margin: 15 0 15 0; */
-    /* margin: 15px 15px 15px 15px; */
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
 }
-.member div:hover{
+
+.member div:hover {
     background-color: rgba(66, 66, 66, 0.219);
-    /* background-color: rgba(241, 149, 0, 0.2); */
 }
 
-.member h3{
- color: #F19500;
+.member h3 {
+    color: #F19500;
 }
 
-.member ul{
-    padding-left:0;
+.member ul {
+    padding-left: 0;
 }
 
-.member li{
+.member li {
     list-style: none;
 }
 
-.member button{
+.member button {
     position: relative;
-    bottom:0;
+    bottom: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+    .member h3{
+        font-size:120%;
+    }
+    .member{
+        font-size: 60%;
+    }
 }

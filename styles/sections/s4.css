@@ -4,12 +4,10 @@
 }
 
 .committee_panel {
-    flex: 1;
     display: flex;
+    flex: 1;
     justify-content: center;
     align-items: center;
-    /* height: 100%;
-    overflow: hidden; */
     background-size: cover;
     background-position: center;
     color: #F19500;
@@ -40,16 +38,10 @@
 
 .content p {
     position: relative;
-    max-width: 15vw;
     visibility: hidden;
     top: 0;
     transition: top .8s ease;
-    color:white;
-}
-
-.committee_panel:hover p {
-    visibility: visible;
-    top: 5vh;
+    color: white;
 }
 
 #marketing {
@@ -66,4 +58,26 @@
 
 #professional {
     background-image: url('../../images/professional.jpg');
+}
+
+@media only screen and (max-width: 1200px) {
+    .panel_container {
+        flex-direction: column;
+    }
+
+    .committee_panel:hover p {
+        visibility: visible;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .content p {
+        max-width: 15vw;
+    }
+
+    .committee_panel:hover p {
+        top: 5vh;
+        visibility: visible;
+    }
+
 }

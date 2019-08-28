@@ -42,43 +42,11 @@ html {
    height: 7vh;
 }
 
-/* #programs {
-   background: #252233;
-   color: white;
-   width: 100vw;
-}
-
-#programs .row {
-   height: 100vh;
-} */
-
-/* #soon{
-   position: absolute;
-   top: 250vh;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   text-align: center;
-}
-
-#soon_section{
-   background: #252233;
-} */
-
 #eboard .row {
    height: 40vh;
 }
-
-/* .col{
-   padding: 0;
-} */
 
 .section-heading {
    color: #F19500;
    font-weight: 900;
 }
-
-/* #calendar {
-   max-width: 900px;
-   margin: 40px auto;
- } */
-

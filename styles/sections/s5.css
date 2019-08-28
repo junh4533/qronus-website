@@ -3,9 +3,8 @@
     height: 100vh;
     background-size: cover;
     color: black;
-    
-    /* display:flex; */
 }
+
 .row-programs {
     position: relative;
     z-index: 999;
@@ -13,19 +12,11 @@
     top: 10vh;
 }
 
-.row-programs .section-heading{
-    font-size: 3.5vw;
-}
-
 #llp-description{
     color:white;
-    font-size: 150%;
 }
 
-#llp_video{
-    width:100%;
-    height:50%;
-}
+
 
 .card {
     position: relative;
@@ -34,4 +25,33 @@
     margin:auto;
     z-index: 999;
     text-align: center;
+}
+
+@media only screen and (max-width: 1200px) {
+    .row-programs .section-heading{
+        font-size: 3.5vh;
+    }
+
+    #llp-description{
+        font-size: 1.5vh;
+    }
+
+    #llp_video{
+        width:85vw;
+        height:30vh;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .row-programs .section-heading{
+        font-size: 3.5vw;
+    }
+
+    #llp-description{
+        font-size: 1vw;
+    }
+    #llp_video{
+        width:100%;
+        height:50%;
+    }
 }

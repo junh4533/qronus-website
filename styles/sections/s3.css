@@ -5,15 +5,28 @@
     color: white;
     margin: 0 auto;
     text-align: center;
-
 }
 
 .row-eboard, #eboard-heading{
     position: relative;
     z-index:999;
+    /* height:80vh; */
 }
-.rounded-circle{
-    width:25vh;
-    height:25vh;
+
+@media only screen and (max-width: 1200px) {
+    .rounded-circle{
+    max-width: 10vh;  
+    max-height: 10vh; 
     object-fit: cover;
 }
+
+    .eboard-description h3{
+        font-size:2vh;
+    }
+
+    .eboard-description h6{
+        font-size:1vh;
+    }
+}
+
+

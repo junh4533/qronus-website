@@ -56,31 +56,40 @@ $(document).ready(function () {
     .pauseFor(1500)
     .start();
 
-  // document.addEventListener('DOMContentLoaded', function() {
-  var parent = document.querySelector('#split_container'),
-    topPanel = parent.querySelector('#professional_panel'),
-    handle = parent.querySelector('#split_divider'),
-    tint_professional = document.getElementById('tint_professional'),
-    tint_social = document.getElementById('tint_social'),
-    skewHack = 1000,
-    delta = 0;
+  function viewport_query(viewport) {
+    if (viewport.matches) { // viewport width > 1200px (not mobile device)
+      var parent = document.querySelector('#split_container'),
+        topPanel = parent.querySelector('#professional_panel'),
+        handle = parent.querySelector('#split_divider'),
+        tint_professional = document.getElementById('tint_professional'),
+        tint_social = document.getElementById('tint_social'),
+        skewHack = 1000,
+        delta = 0;
 
-  parent.addEventListener('mousemove', function (event) {
-    // Get the delta b/w mouse position and center point.
-    delta = (event.clientX - window.innerWidth / 2) * 0.5;
+      parent.addEventListener('mousemove', function (event) {
+        // Get the delta b/w mouse position and center point.
+        delta = (event.clientX - window.innerWidth / 2) * 0.5;
 
-    // Move the handle.
-    handle.style.left = event.clientX + delta + 'px';
+        // Move the handle.
+        handle.style.left = event.clientX + delta + 'px';
 
-    // Adjust the top panel width.
-    topPanel.style.width = event.clientX + skewHack + delta + 'px';
+        // Adjust the top panel width.
+        topPanel.style.width = event.clientX + skewHack + delta + 'px';
 
-    width = $(window).width();
-    tint_opacity1 = opacity_range(event.clientX, 0, width) * .7;
-    tint_opacity2 = opacity_range(event.clientX, width, 0) * .7;
-    // console.log(tint_opacity1)
-    tint_social.style.background = `rgba(0, 0, 0, ${tint_opacity1})`;
-    tint_professional.style.background = `rgba(0, 0, 0, ${tint_opacity2})`;
-  });
+        width = $(window).width();
+        tint_opacity1 = opacity_range(event.clientX, 0, width) * .7;
+        tint_opacity2 = opacity_range(event.clientX, width, 0) * .7;
+        // console.log(tint_opacity1)
+        tint_social.style.background = `rgba(0, 0, 0, ${tint_opacity1})`;
+        tint_professional.style.background = `rgba(0, 0, 0, ${tint_opacity2})`;
+      });
+    } else{
+      $("#social").before($("#social_enrichment")); //move social enrichment heading before its description
+    }
+  }
+
+  var viewport = window.matchMedia("(min-width: 1200px)")
+  viewport_query(viewport) // Call listener function at run time
+  viewport.addListener(viewport_query) // Attach listener function on state changes
 
 });
