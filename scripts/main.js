@@ -92,7 +92,7 @@ $(document).ready(function () {
     } else{
       $("#social").before($("#social_enrichment")); //move social enrichment heading before its description
       tint_social.style.background = `rgba(0, 0, 0, .5)`;
-      tint_professional.style.background = `rgba(0, 0, 0, .5})`;
+      tint_professional.style.background = `rgba(0, 0, 0, .5)`;
     }
   }
 
