@@ -8,7 +8,13 @@
 
 #join .tint {
     background: rgba(0, 0, 0, .7);
+    
 }
+/* 
+#membership{
+    height:50vh;
+    width:80vw;
+} */
 
 #join .row {
     position: relative;
@@ -23,17 +29,23 @@
 
 .member div {
     background-color: rgba(0, 0, 0, 0.7);
+    background: rgba(255, 255, 255, .1);
     height: 100%;
+    transition: 0.7s ease;
 }
 
 .member div:hover {
     background-color: rgba(66, 66, 66, 0.219);
+    background: rgba(241, 149, 0, 0.15);
 }
 
-.member h3 {
+.member h2 {
     color: #F19500;
 }
-
+.member hr{
+    width:20%;
+    background-color:rgb(94, 94, 94);
+}
 .member ul {
     padding-left: 0;
 }
@@ -48,10 +60,11 @@
 }
 
 @media only screen and (max-width: 1200px) {
-    .member h3{
-        font-size:120%;
-    }
     .member{
+        /* margin-bottom: 15px; */
         font-size: 60%;
+    }
+    .member h2{
+        font-size:175%;
     }
 }

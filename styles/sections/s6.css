@@ -10,22 +10,3 @@
     width: 100vw;
     vertical-align: middle;
 }
-
-.carousel-inner{
-    z-index:-99999999;
-}
-.carousel-item img{
-    width:100vw;
-    height:100vh;
-    /* z-index:-1000; */
-}
-
-/* .fa-angle-left, .fa-angle-right{
-    color: #F19500;
-    font-size:3vw;
-}
-*/
-.carousel-indicators li {
-    height: 10px;
-    background-color: #F19500;
-} 

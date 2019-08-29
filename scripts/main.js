@@ -29,7 +29,7 @@ $(document).ready(function () {
     .deleteAll()
     .pauseFor(250)
     .typeString('student')
-    .pauseFor(1500)
+    .pauseFor(2500)
     .start();
 
   var typewriter2 = new Typewriter(line2, {
@@ -39,7 +39,7 @@ $(document).ready(function () {
   typewriter2.pauseFor(1000).typeString('learn')
     .pauseFor(500)
     .deleteAll()
-    .pauseFor(250)
+    .pauseFor(500)
     .typeString('grow')
     .pauseFor(1250)
     .deleteAll()
@@ -53,7 +53,7 @@ $(document).ready(function () {
     .deleteAll()
     .pauseFor(250)
     .typeString('<strong style="color:orange">Ascend</strong>')
-    .pauseFor(1500)
+    .pauseFor(2500)
     .start();
 
   function viewport_query(viewport) {

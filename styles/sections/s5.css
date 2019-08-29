@@ -15,7 +15,12 @@
     z-index:999999;
 } 
 
-.carousel-indicators li {
+.carousel-inner{
+    z-index:-99999999;
+}
+
+#programs-carousel li {
+    height: 10px;
     background-color: #F19500;
 } 
 
