@@ -4,6 +4,12 @@ function opacity_range(val, max, min) {
 
 $(document).ready(function () {
 
+  $('#homepage-toast').toast({
+    delay: 3000
+  })
+
+  $('#homepage-toast').toast('show');
+
   $('#fullpage').fullpage();
   var line1 = document.getElementById('year');
   var line2 = document.getElementById('goal');
@@ -85,6 +91,8 @@ $(document).ready(function () {
       });
     } else{
       $("#social").before($("#social_enrichment")); //move social enrichment heading before its description
+      tint_social.style.background = `rgba(0, 0, 0, .5)`;
+      tint_professional.style.background = `rgba(0, 0, 0, .5})`;
     }
   }
 

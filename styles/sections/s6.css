@@ -3,10 +3,3 @@
     background-size: cover;
 }
 
-.verticalhorizontal {
-    display: table-cell;
-    height: 100vh;
-    text-align: center;
-    width: 100vw;
-    vertical-align: middle;
-}

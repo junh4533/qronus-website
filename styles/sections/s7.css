@@ -2,69 +2,71 @@
     background: url('../../images/geometric3.jpg');
     height: 100vh;
     background-size: cover;
-    color: black;
     color: white;
-}
-
-#join .tint {
-    background: rgba(0, 0, 0, .7);
-    
-}
-/* 
-#membership{
-    height:50vh;
-    width:80vw;
-} */
-
-#join .row {
-    position: relative;
-    z-index: 999;
-    top: 10vh;
-    list-style-type: square;
-}
-
-.member {
     text-align: center;
 }
 
-.member div {
-    background-color: rgba(0, 0, 0, 0.7);
-    background: rgba(255, 255, 255, .1);
-    height: 100%;
-    transition: 0.7s ease;
+#join .tint {
+    background: rgba(0, 0, 0, .8);
+    
 }
 
-.member div:hover {
-    background-color: rgba(66, 66, 66, 0.219);
-    background: rgba(241, 149, 0, 0.15);
+#membership{
+    overflow-x:scroll;
+    text-align: center;
+    z-index:9999999;
 }
 
-.member h2 {
+#membership h2 {
     color: #F19500;
 }
-.member hr{
-    width:20%;
+#membership hr{
+    width:80%;
     background-color:rgb(94, 94, 94);
 }
-.member ul {
+#membership ul {
     padding-left: 0;
 }
 
-.member li {
+#membership li {
     list-style: none;
+    font-size:125%;
 }
 
-.member button {
+#membership button {
     position: relative;
+    margin: auto;
     bottom: 0;
 }
 
-@media only screen and (max-width: 1200px) {
-    .member{
-        /* margin-bottom: 15px; */
-        font-size: 60%;
-    }
-    .member h2{
-        font-size:175%;
-    }
+.card-block {
+    min-height: 60vh;
+    background: rgba(59, 61, 66, 0.507);
+    text-align: center;
+    /* background: rgba(241, 149, 0, 0.158); */
+}
+
+.card hr {
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#membership::-webkit-scrollbar {
+    width: 10px;
+}
+
+#membership::-webkit-scrollbar-track {
+    background: rgba(59, 61, 66, 0.507);
+    border: 5px solid transparent;
+    background-clip: content-box;  
+}
+
+#membership::-webkit-scrollbar-thumb {
+    background: #F19500;
+    border: none;
+}
+
+#join-tint{
+    z-index:-10;
 }
