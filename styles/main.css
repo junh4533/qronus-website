@@ -1,9 +1,178 @@
 body{
     width:100%;
     height:100%;
-    background-color: #DDDDDD;
+    /* background-color: #DDDDDD; */
+    scroll-behavior: smooth;
+    /* color:#003049; */
 }
 
 #logo{
     max-height:5vh;
 }
+
+.section{
+    height:100vh;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height:100vh;
+    width:100vw;
+ }
+
+ .tint {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    z-index: -5;
+ }
+
+ #with_qronus_img{
+   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+   filter: grayscale(100%);
+ }
+
+@media only screen and (min-width: 1200px) {
+    #split_container {
+       position: relative;
+       width: 100%;
+       height: 100vh;
+       overflow: hidden;
+    }
+ 
+    .panel {
+       position: absolute;
+       width: 100vw;
+       height: 100%;
+       overflow: hidden;
+    }
+ 
+    .split_content {
+       position: absolute;
+       width: 100vw;
+       height: 100vh;
+    }
+ 
+    .description {
+       position: absolute;
+       max-width: 60vw;
+       z-index: 99999;
+       /* color: #F19500; */
+       width: 80vw;
+    }
+ 
+    .description h1 {
+       font-weight: 900;
+       font-size: 3.5vw;
+       color: #FF5218;
+    }
+    
+    .description p {
+       /* color: white; */
+       position: relative;
+       z-index: 99999;
+       font-size: 1.5vw;
+    }
+ 
+    .panel img {
+       width: 100vw;
+       z-index: -10;
+    }
+ 
+    #split_divider {
+       position: absolute;
+       display: block;
+       width: 5px;
+       height: 200%;
+       left: 50%;
+       top: 50%;
+       transform: rotate(10deg) translateY(-50%);
+       transform-origin: top;
+       z-index: 999;
+       background-color: #FF5218;
+    }
+ 
+    #long_line_panel {
+       z-index: 999;
+       width: 50vw;
+       transform: skew(-10deg);
+       margin-left: -1000px;
+       width: calc(50vw + 1000px);
+    }
+ 
+    #long_line_content {
+       transform: skew(10deg);
+       margin-left: 1000px;
+       z-index: 999;
+    }
+
+    #long_line_description {
+       top: 10vh;
+       left: 5vw;
+    }
+ 
+    #qronus_panel {
+       z-index: 999;
+    }
+ 
+    #qronus_description {
+       bottom: 5vh;
+       right: 5vw;
+       text-align: right;
+       color:white;
+    }
+ 
+ }
+ 
+ @media only screen and (max-width: 1200px) {
+    
+    .panel{
+       width:100vw;
+       height:50vh;
+       overflow: hidden;
+    }
+ 
+    .split_content {
+       position: absolute;
+       width: 100vw;
+       height: 50vh;
+    }
+ 
+    .description {
+       position: absolute;
+       width: 80vw;
+       top:10vh;
+       left: 10vw;
+       max-width: 60vw;
+       z-index: 99999;
+       /* color: #F19500; */
+       
+    }
+ 
+    .description h1 {
+       font-weight: 900;
+       font-size: 3.5vh;
+       position: relative;
+       z-index: 99999;
+       color: #FF5218;
+    }
+    
+    .description p {
+        position: relative;
+       z-index: 99999;
+       /* color: white; */
+       font-size: 1.5vh;
+    }
+ 
+    .panel img {
+       width: 100vw;
+       height:50vh;
+    }
+ 
+ }
