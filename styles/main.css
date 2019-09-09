@@ -1,60 +1,60 @@
 body {
    width: 100%;
    height: 100%;
-   color:white;
-   background: black;
+   /* overflow-x: hidden; */
+   /* color:white; */
+   background: rgb(233, 231, 229);
 }
+
+.circle {
+   position: absolute;
+   top:-40%;
+   left: -60%;
+   background: #66D3FA;
+   border-radius: 50%;
+   width: 200vh;
+   height: 200vh;
+   z-index:-1;
+}
+
+.circle2 {
+   position: absolute;
+   bottom:-50%;
+   right: -30%;
+   background: #2565AE;
+   border-radius: 50%;
+   width: 200vh;
+   height: 200vh;
+   z-index:-2;
+}
+
+.circle3 {
+   position: absolute;
+   top:-150%;
+   right: -70%;
+   background: #3C99DC;
+   border-radius: 50%;
+   width: 200vh;
+   height: 200vh;
+   z-index:-2;
+}
+
 .section_container {
-   position: relative;
-   height: 100vh;
    width: 100vw;
-   display: grid;
-   justify-items: center;
-   align-items: center; 
+   height: 100vh;
+   position: relative;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
    z-index: 999;
 }
 
-.center {
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   height: 100vh;
-   width: 100vw;
-}
-
-.tint {
-   height: 100vh;
-   width: 100vw;
-   position: absolute;
-   top: 0;
-   left: 0;
-   background: rgba(0, 0, 0, .5);
-   z-index: 5;
-}
-
-.blurred_bg {
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100vw;
-   height: 100vh;
-   z-index: inherit 0;
-
-   background-image: url("../images/vector_bright.png");
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-position: center;
-   /* filter: blur(2px); */
-   /* -webkit-filter: blur(3px); */
-}
-
-i{
+i {
    color: #FF5218;
-   font-size:500%;
+   font-size: 500%;
 }
 
-strong{
+strong {
    color: #FF5218;
 }
 
@@ -67,117 +67,77 @@ strong{
    max-height: 5vh;
 }
 
-#polygonal_video {
-   position: fixed;
-   right: 0;
-   bottom: 0;
-   min-width: 100%;
-   min-height: 100%;
+#s1 {
+   height: 100vh;
+   width: 100vw;
+   background: radial-gradient(at bottom right, #66D3FA, #3C99DC, #2565AE, rgb(3, 44, 87));
+   color: white;
 }
 
-#s1_container{
-   /* background: -webkit-radial-gradient(bottom, #66D3FA, #3C99DC, #2565AE, rgb(3, 44, 87)); */
-   background: radial-gradient(at bottom right,#66D3FA, #3C99DC, #2565AE, rgb(3, 44, 87));
-   /* background-size: 400% 400%; */
-   
-   /* -webkit-animation: AnimationName 3s ease infinite; */
-   /* animation: AnimationName 2s linear infinite alternate; */
+#intro_description {
+   flex: 1;
 }
 
-/* @-webkit-keyframes AnimationName {
-   0%{background-position:0% 51%}
-   50%{background-position:100% 50%}
-   100%{background-position:0% 51%}
-} */
-@keyframes AnimationName {
-   /* 0%{background: radial-gradient(at bottom,#66D3FA, rgb(3, 44, 87), rgb(3, 44, 87), rgb(3, 44, 87));}
-   25%{background: radial-gradient(at bottom,#66D3FA, rgb(81,182,235), rgb(3, 44, 87), rgb(3, 44, 87));}
-   50%{background: radial-gradient(at bottom,#66D3FA, #3C99DC, rgb(49,127,197), rgb(3, 44, 87), rgb(3, 44, 87));}
-   75%{background: radial-gradient(at bottom,#66D3FA, #3C99DC, #2565AE, rgb(3, 44, 87));}
-   100%{background: radial-gradient(at bottom,#66D3FA, #3C99DC, #2565AE, rgb(3, 44, 87));} */
-
-   /* 0%{background: radial-gradient(at bottom, #032c57);}
-   7%{background: radial-gradient(at bottom,#0b3a65, #032c57);}
-   14%{background: radial-gradient(at bottom, #144872, #0b3a65, #032c57);}
-   21%{background: radial-gradient(at bottom,  #1c5680, #144872, #0b3a65, #032c57);}
-   28%{background: radial-gradient(at bottom, #24648d, #1c5680, #144872, #0b3a65, #032c57);}
-   35%{background: radial-gradient(at bottom,#2c729b, #24648d, #1c5680, #144872, #0b3a65, #032c57);}
-   42%{background: radial-gradient(at bottom,  #3580a8, #2c729b, #24648d, #1c5680, #144872, #0b3a65, #032c57);}
-   49%{background: radial-gradient(at bottom, #3d8db6, #3580a8, #2c729b, #24648d, #1c5680, #144872, #0b3a65, #032c57);}
-   58%{background: radial-gradient(at bottom,  #459bc4, #3d8db6, #3580a8, #2c729b, #24648d, #1c5680, #144872, #0b3a65, #032c57);}
-   65%{background: radial-gradient(at bottom, #4da9d1, #459bc4, #3d8db6, #3580a8, #2c729b, #24648d, #1c5680, #144872, #0b3a65, #032c57);}
-   72%{background: radial-gradient(at bottom, #4da9d1, #459bc4, #3d8db6, #3580a8, #2c729b, #24648d, #1c5680, #144872, #0b3a65, #032c57);}
-   79%{background: radial-gradient(at bottom, #55b7df,#4da9d1, #459bc4, #3d8db6, #3580a8, #2c729b, #24648d, #1c5680, #144872, #0b3a65, #032c57);}
-   88%{background: radial-gradient(at bottom,#5ec5ec, #55b7df,#4da9d1, #459bc4, #3d8db6, #3580a8, #2c729b, #24648d, #1c5680, #144872, #0b3a65, #032c57);}
-   100%{background: radial-gradient(at bottom, #66d3fa, #5ec5ec, #55b7df,#4da9d1, #459bc4, #3d8db6, #3580a8, #2c729b, #24648d, #1c5680, #144872, #0b3a65, #032c57);} */
+#intro_image {
+   flex: 1;
 }
 
-/* #qronus_animation *{
- display:inline-block;
-} */
+#kiosk,
+#phone {
+   display: inline-block;
+   width: 1vw;
+}
 
-#kiosk{
-   width:50vw;
+#kiosk {
+   width: 70%;
    /* transform: rotate(20deg); */
 }
 
 #phone {
-   width:12vw;
+   width: 20%;
    transform: rotate(-8deg)
 }
-
-.line{
-   position: relative;
-   left:0;
-   border-top: 10px dotted #FF5218;
-   width:200px;
-   height:10px;
-
-   -webkit-animation-name: dotted_line; /* Safari 4.0 - 8.0 */
-   -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
-   animation-name: dotted_line;
-   animation-duration: 2s;
-}
-
- @keyframes dash {
-   to {
-     stroke-dashoffset: 0;
-   }
- }
-
-@-webkit-keyframes dotted_line {
-   from {width: 0;}
-   to {width: 200px;}
- }
-
- @keyframes dotted_line {
-   from {width: 0;}
-   to {width: 200px;}
- }
 
 /********************** Section 2 CSS ***********************/
 
 #s2 {
-   /* background-color: #B0C4DE; */
-   grid-template-columns: 1.5fr 1fr;
-   color: white;
+   background: rgb(216, 211, 203);
 }
 
-#s3_container{
+#why_qronus {
+   flex: 1;
+}
 
+#video_container {
+   flex: 2;
+}
+
+#video {
+   width: 50%;
 }
 
 /********************** Section 3 CSS ***********************/
 
-#s3 {
-   background-image: url("../images/vector2.jpg");
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-position: center;
+#s3 {}
+
+#s3 .slide {
+   flex: 1;
+   text-align: center;
 }
+
 
 /********************** Section 4 CSS ***********************/
 
 #s4 {
-   background-color: #6b5b95;
+   background: rgb(216, 211, 203);
+}
+
+#s4 .slide {
+   flex: 1;
+   text-align: center;
+}
+
+#s4 .slide img {
+   width: 20vw;
+   height: 15vh;
 }
