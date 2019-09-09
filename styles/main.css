@@ -1,178 +1,143 @@
-body{
-    width:100%;
-    height:100%;
-    /* background-color: #DDDDDD; */
-    scroll-behavior: smooth;
-    /* color:#003049; */
+body {
+   width: 100%;
+   height: 100%;
+   /* overflow-x: hidden; */
+   /* color:white; */
+   background: rgb(233, 231, 229);
 }
 
-#logo{
-    max-height:5vh;
+.circle {
+   position: absolute;
+   top:-40%;
+   left: -60%;
+   background: #66D3FA;
+   border-radius: 50%;
+   width: 200vh;
+   height: 200vh;
+   z-index:-1;
 }
 
-.section{
-    height:100vh;
+.circle2 {
+   position: absolute;
+   bottom:-50%;
+   right: -30%;
+   background: #2565AE;
+   border-radius: 50%;
+   width: 200vh;
+   height: 200vh;
+   z-index:-2;
 }
 
-.center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height:100vh;
-    width:100vw;
- }
+.circle3 {
+   position: absolute;
+   top:-150%;
+   right: -70%;
+   background: #3C99DC;
+   border-radius: 50%;
+   width: 200vh;
+   height: 200vh;
+   z-index:-2;
+}
 
- .tint {
-    height: 100vh;
-    width: 100vw;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, .5);
-    z-index: -5;
- }
+.section_container {
+   width: 100vw;
+   height: 100vh;
+   position: relative;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   z-index: 999;
+}
 
- #with_qronus_img{
-   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-   filter: grayscale(100%);
- }
+i {
+   color: #FF5218;
+   font-size: 500%;
+}
 
-@media only screen and (min-width: 1200px) {
-    #split_container {
-       position: relative;
-       width: 100%;
-       height: 100vh;
-       overflow: hidden;
-    }
- 
-    .panel {
-       position: absolute;
-       width: 100vw;
-       height: 100%;
-       overflow: hidden;
-    }
- 
-    .split_content {
-       position: absolute;
-       width: 100vw;
-       height: 100vh;
-    }
- 
-    .description {
-       position: absolute;
-       max-width: 60vw;
-       z-index: 99999;
-       /* color: #F19500; */
-       width: 80vw;
-    }
- 
-    .description h1 {
-       font-weight: 900;
-       font-size: 3.5vw;
-       color: #FF5218;
-    }
-    
-    .description p {
-       /* color: white; */
-       position: relative;
-       z-index: 99999;
-       font-size: 1.5vw;
-    }
- 
-    .panel img {
-       width: 100vw;
-       z-index: -10;
-    }
- 
-    #split_divider {
-       position: absolute;
-       display: block;
-       width: 5px;
-       height: 200%;
-       left: 50%;
-       top: 50%;
-       transform: rotate(10deg) translateY(-50%);
-       transform-origin: top;
-       z-index: 999;
-       background-color: #FF5218;
-    }
- 
-    #long_line_panel {
-       z-index: 999;
-       width: 50vw;
-       transform: skew(-10deg);
-       margin-left: -1000px;
-       width: calc(50vw + 1000px);
-    }
- 
-    #long_line_content {
-       transform: skew(10deg);
-       margin-left: 1000px;
-       z-index: 999;
-    }
+strong {
+   color: #FF5218;
+}
 
-    #long_line_description {
-       top: 10vh;
-       left: 5vw;
-    }
- 
-    #qronus_panel {
-       z-index: 999;
-    }
- 
-    #qronus_description {
-       bottom: 5vh;
-       right: 5vw;
-       text-align: right;
-       color:white;
-    }
- 
- }
- 
- @media only screen and (max-width: 1200px) {
-    
-    .panel{
-       width:100vw;
-       height:50vh;
-       overflow: hidden;
-    }
- 
-    .split_content {
-       position: absolute;
-       width: 100vw;
-       height: 50vh;
-    }
- 
-    .description {
-       position: absolute;
-       width: 80vw;
-       top:10vh;
-       left: 10vw;
-       max-width: 60vw;
-       z-index: 99999;
-       /* color: #F19500; */
-       
-    }
- 
-    .description h1 {
-       font-weight: 900;
-       font-size: 3.5vh;
-       position: relative;
-       z-index: 99999;
-       color: #FF5218;
-    }
-    
-    .description p {
-        position: relative;
-       z-index: 99999;
-       /* color: white; */
-       font-size: 1.5vh;
-    }
- 
-    .panel img {
-       width: 100vw;
-       height:50vh;
-    }
- 
- }
+/********************** Section 1 CSS ***********************/
+.nav-link {
+   color: white;
+}
+
+#logo {
+   max-height: 5vh;
+}
+
+#s1 {
+   height: 100vh;
+   width: 100vw;
+   background: radial-gradient(at bottom right, #66D3FA, #3C99DC, #2565AE, rgb(3, 44, 87));
+   color: white;
+}
+
+#intro_description {
+   flex: 1;
+}
+
+#intro_image {
+   flex: 1;
+}
+
+#kiosk,
+#phone {
+   display: inline-block;
+   width: 1vw;
+}
+
+#kiosk {
+   width: 70%;
+   /* transform: rotate(20deg); */
+}
+
+#phone {
+   width: 20%;
+   transform: rotate(-8deg)
+}
+
+/********************** Section 2 CSS ***********************/
+
+#s2 {
+   background: rgb(216, 211, 203);
+}
+
+#why_qronus {
+   flex: 1;
+}
+
+#video_container {
+   flex: 2;
+}
+
+#video {
+   width: 50%;
+}
+
+/********************** Section 3 CSS ***********************/
+
+#s3 {}
+
+#s3 .slide {
+   flex: 1;
+   text-align: center;
+}
+
+
+/********************** Section 4 CSS ***********************/
+
+#s4 {
+   background: rgb(216, 211, 203);
+}
+
+#s4 .slide {
+   flex: 1;
+   text-align: center;
+}
+
+#s4 .slide img {
+   width: 20vw;
+   height: 15vh;
+}
