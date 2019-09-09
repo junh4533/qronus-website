@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
     <!-- Page Piling -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.6/jquery.pagepiling.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.6/jquery.pagepiling.min.css"> -->
 
     <!-- AOS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
@@ -24,8 +24,8 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-md bg-light navbar-light fixed-top">
-        <a href="#" class="navbar-brand"><img src="/images/qronus_logo.png" class="img-fluid" id="logo"></a>
+    <nav class="navbar navbar-expand-md fixed-top">
+        <a href="#" class="navbar-brand"><img src="/images/qronus_logo_white.png" class="img-fluid" id="logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -53,52 +53,69 @@
         </div>
     </nav>
 
-    <div id="pagepiling">
-        <div class="section" id="home">
-
-            <div id="split_container">
-
-                <div class="panel" id="qronus_panel">
-                    <div class="split_content" id="qronus_content">
-                        <div class="tint" id="tint_qronus"></div>
-                        <div class="description" id="qronus_description">
-                            <p id="qronus_statement">Don't keep your clients waiting, keep them anticipating. Nobody
-                                wants to wait
-                                in line for an hour.
-                                With Qronus you can optimize appointment scheduling and manage them in one single
-                                system.
-                            </p>
-                            <h1 id="with_qronus">With Qronus</h1>
-                        </div>
-                        <img class="center" id="with_qronus_img" src="images/versatility.png">
-                    </div>
-                </div>
-
-                <div class="panel" id="long_line_panel">
-                    <div class="split_content" id="long_line_content">
-                        <div class="tint" id="tint_long_line"></div>
-                        <div class="description" id="long_line_description">
-                            <h1 id="long_line">Long Queues</h1>
-                            <p>
-                            </p>
-                        </div>
-                        <img class="center" id="long_queue_img" src="images/long_queue.jpg">
-                    </div>
-                </div>
-
-                <div id="split_divider"></div>
-            </div>
-
+    <div class="section_container" id="s1_container">
+        <div class="slide" data-aos="slide-up">
+            <h1>The first <strong>self-manageable</strong> queuing system</h1>
+            <p>Don't keep your clients waiting, keep them anticipating. Nobody
+                wants to wait in line for an hour.
+                With Qronus you can optimize appointment scheduling and manage them in one singlesystem.</p>
+        </div>
+        <div class="slide" id="qronus_animation" data-aos="slide-up">
+            <img id="kiosk" src="../images/kiosk.png" alt="">
+            <img id="phone" src="../images/phone.png" alt="">
+            <!-- <div class="line"></div> -->
         </div>
 
-        <div class="section" id="page2">
-            <div id="test" data-aos="slide-up">
-                <!-- <h1>hello</h1> -->
-                <img src="images/qronus_logo.png" alt="">
-            </div>
+    </div>
 
+    <div class="section_container" id="s2_container">
+        <div class="slide" data-aos="slide-up">
+            <h1>Why Qronus?</h1>
+            <p>Qronus is a customizable queue management system that optimizes appointment scheduling. </p>
         </div>
+        <div data-aos="slide-left">
+            <video src="video.mp4"></video>
+        </div>
+    </div>
 
+    <div class="section_container" id="s3_container">
+        <div class="slide" data-aos="slide-right">
+            <i class="fas fa-map-marker-alt"></i>
+            <h1>Check in</h1>
+            <p>Customers can quickly check in with the kiosk using their IDs</p>
+        </div>
+        <div class="slide" data-aos="slide-right">
+            <i class="fas fa-globe"></i>
+            <h1>Wait to be called, from anywhere</h1>
+            <p>Clients gets a notification when it's almost their turn.</p>
+        </div>
+        <div class="slide" data-aos="slide-right">
+            <i class="fas fa-user-check"></i>
+            <h1>Resolve, escalate, or postpone the issue</h1>
+            <p>Clients receives a personalized message</p>
+        </div>
+    </div>
+
+    <div class="section_container" id="s4_container">
+        <div class="slide" data-aos="slide-right">
+            <i class="fas fa-map-marker-alt"></i>
+            <h1>Faster check in using LDAP</h1>
+            <p>Unlike other queue management systems, Qronus can be configured to access your school's active directory.
+                This allows students to quickly check in using their school issued IDs.</p>
+        </div>
+        <div class="slide" data-aos="slide-right">
+            <i class="fas fa-globe"></i>
+            <h1>Fully customizable</h1>
+            <p>It takes a couple of seconds to tailor the appearance of your app. </p>
+        </div>
+        <div class="slide" data-aos="slide-right">
+            <i class="fas fa-user-check"></i>
+            <h1>Fully compatible with ITAM systems</h1>
+            <p>IT asset management systems are crucial when it comes to tech support. Our app can generate support
+                tickets
+                for ITAMs like Quest KACE.
+            </p>
+        </div>
     </div>
 
     <!-- jQuery library -->
@@ -111,7 +128,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <!-- Page Piling -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.6/jquery.pagepiling.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.6/jquery.pagepiling.min.js"></script> -->
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
 
     <!-- AOS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>

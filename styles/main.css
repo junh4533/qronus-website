@@ -1,190 +1,183 @@
-body{
-    width:100%;
-    height:100%;
-    /* background-color: #DDDDDD; */
-    scroll-behavior: smooth;
-    /* color:#003049; */
+body {
+   width: 100%;
+   height: 100%;
+   color:white;
+   background: black;
 }
-
-#logo{
-    max-height:5vh;
-}
-
-.section{
-    /* height:100vh; */
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
+.section_container {
+   position: relative;
+   height: 100vh;
+   width: 100vw;
+   display: grid;
+   justify-items: center;
+   align-items: center; 
+   z-index: 999;
 }
 
 .center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height:100vh;
-    width:100vw;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   height: 100vh;
+   width: 100vw;
+}
+
+.tint {
+   height: 100vh;
+   width: 100vw;
+   position: absolute;
+   top: 0;
+   left: 0;
+   background: rgba(0, 0, 0, .5);
+   z-index: 5;
+}
+
+.blurred_bg {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   height: 100vh;
+   z-index: inherit 0;
+
+   background-image: url("../images/vector_bright.png");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   /* filter: blur(2px); */
+   /* -webkit-filter: blur(3px); */
+}
+
+i{
+   color: #FF5218;
+   font-size:500%;
+}
+
+strong{
+   color: #FF5218;
+}
+
+/********************** Section 1 CSS ***********************/
+.nav-link {
+   color: white;
+}
+
+#logo {
+   max-height: 5vh;
+}
+
+#polygonal_video {
+   position: fixed;
+   right: 0;
+   bottom: 0;
+   min-width: 100%;
+   min-height: 100%;
+}
+
+#s1_container{
+   /* background: -webkit-radial-gradient(bottom, #66D3FA, #3C99DC, #2565AE, rgb(3, 44, 87)); */
+   background: radial-gradient(at bottom right,#66D3FA, #3C99DC, #2565AE, rgb(3, 44, 87));
+   /* background-size: 400% 400%; */
+   
+   /* -webkit-animation: AnimationName 3s ease infinite; */
+   /* animation: AnimationName 2s linear infinite alternate; */
+}
+
+/* @-webkit-keyframes AnimationName {
+   0%{background-position:0% 51%}
+   50%{background-position:100% 50%}
+   100%{background-position:0% 51%}
+} */
+@keyframes AnimationName {
+   /* 0%{background: radial-gradient(at bottom,#66D3FA, rgb(3, 44, 87), rgb(3, 44, 87), rgb(3, 44, 87));}
+   25%{background: radial-gradient(at bottom,#66D3FA, rgb(81,182,235), rgb(3, 44, 87), rgb(3, 44, 87));}
+   50%{background: radial-gradient(at bottom,#66D3FA, #3C99DC, rgb(49,127,197), rgb(3, 44, 87), rgb(3, 44, 87));}
+   75%{background: radial-gradient(at bottom,#66D3FA, #3C99DC, #2565AE, rgb(3, 44, 87));}
+   100%{background: radial-gradient(at bottom,#66D3FA, #3C99DC, #2565AE, rgb(3, 44, 87));} */
+
+   /* 0%{background: radial-gradient(at bottom, #032c57);}
+   7%{background: radial-gradient(at bottom,#0b3a65, #032c57);}
+   14%{background: radial-gradient(at bottom, #144872, #0b3a65, #032c57);}
+   21%{background: radial-gradient(at bottom,  #1c5680, #144872, #0b3a65, #032c57);}
+   28%{background: radial-gradient(at bottom, #24648d, #1c5680, #144872, #0b3a65, #032c57);}
+   35%{background: radial-gradient(at bottom,#2c729b, #24648d, #1c5680, #144872, #0b3a65, #032c57);}
+   42%{background: radial-gradient(at bottom,  #3580a8, #2c729b, #24648d, #1c5680, #144872, #0b3a65, #032c57);}
+   49%{background: radial-gradient(at bottom, #3d8db6, #3580a8, #2c729b, #24648d, #1c5680, #144872, #0b3a65, #032c57);}
+   58%{background: radial-gradient(at bottom,  #459bc4, #3d8db6, #3580a8, #2c729b, #24648d, #1c5680, #144872, #0b3a65, #032c57);}
+   65%{background: radial-gradient(at bottom, #4da9d1, #459bc4, #3d8db6, #3580a8, #2c729b, #24648d, #1c5680, #144872, #0b3a65, #032c57);}
+   72%{background: radial-gradient(at bottom, #4da9d1, #459bc4, #3d8db6, #3580a8, #2c729b, #24648d, #1c5680, #144872, #0b3a65, #032c57);}
+   79%{background: radial-gradient(at bottom, #55b7df,#4da9d1, #459bc4, #3d8db6, #3580a8, #2c729b, #24648d, #1c5680, #144872, #0b3a65, #032c57);}
+   88%{background: radial-gradient(at bottom,#5ec5ec, #55b7df,#4da9d1, #459bc4, #3d8db6, #3580a8, #2c729b, #24648d, #1c5680, #144872, #0b3a65, #032c57);}
+   100%{background: radial-gradient(at bottom, #66d3fa, #5ec5ec, #55b7df,#4da9d1, #459bc4, #3d8db6, #3580a8, #2c729b, #24648d, #1c5680, #144872, #0b3a65, #032c57);} */
+}
+
+/* #qronus_animation *{
+ display:inline-block;
+} */
+
+#kiosk{
+   width:50vw;
+   /* transform: rotate(20deg); */
+}
+
+#phone {
+   width:12vw;
+   transform: rotate(-8deg)
+}
+
+.line{
+   position: relative;
+   left:0;
+   border-top: 10px dotted #FF5218;
+   width:200px;
+   height:10px;
+
+   -webkit-animation-name: dotted_line; /* Safari 4.0 - 8.0 */
+   -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+   animation-name: dotted_line;
+   animation-duration: 2s;
+}
+
+ @keyframes dash {
+   to {
+     stroke-dashoffset: 0;
+   }
  }
 
- .tint {
-    height: 100vh;
-    width: 100vw;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, .5);
-    z-index: -5;
+@-webkit-keyframes dotted_line {
+   from {width: 0;}
+   to {width: 200px;}
  }
 
- #with_qronus_img{
-   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-   filter: grayscale(100%);
+ @keyframes dotted_line {
+   from {width: 0;}
+   to {width: 200px;}
  }
 
- #test{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-    /* position: relative;
-    top:50vh;
-    z-index:9999; */
- }
+/********************** Section 2 CSS ***********************/
 
-@media only screen and (min-width: 1200px) {
-    #split_container {
-       position: relative;
-       width: 100%;
-       height: 100vh;
-       overflow: hidden;
-    }
- 
-    .panel {
-       position: absolute;
-       width: 100vw;
-       height: 100%;
-       overflow: hidden;
-    }
- 
-    .split_content {
-       position: absolute;
-       width: 100vw;
-       height: 100vh;
-    }
- 
-    .description {
-       position: absolute;
-       max-width: 60vw;
-       z-index: 99999;
-       /* color: #F19500; */
-       width: 80vw;
-    }
- 
-    .description h1 {
-       font-weight: 900;
-       font-size: 3.5vw;
-       color: #FF5218;
-    }
-    
-    .description p {
-       /* color: white; */
-       position: relative;
-       z-index: 99999;
-       font-size: 1.5vw;
-    }
- 
-    .panel img {
-       width: 100vw;
-       z-index: -10;
-    }
- 
-    #split_divider {
-       position: absolute;
-       display: block;
-       width: 5px;
-       height: 200%;
-       left: 50%;
-       top: 50%;
-       transform: rotate(10deg) translateY(-50%);
-       transform-origin: top;
-       z-index: 999;
-       background-color: #FF5218;
-    }
- 
-    #long_line_panel {
-       z-index: 999;
-       width: 50vw;
-       transform: skew(-10deg);
-       margin-left: -1000px;
-       width: calc(50vw + 1000px);
-    }
- 
-    #long_line_content {
-       transform: skew(10deg);
-       margin-left: 1000px;
-       z-index: 999;
-    }
+#s2 {
+   /* background-color: #B0C4DE; */
+   grid-template-columns: 1.5fr 1fr;
+   color: white;
+}
 
-    #long_line_description {
-       top: 10vh;
-       left: 5vw;
-    }
- 
-    #qronus_panel {
-       z-index: 999;
-    }
- 
-    #qronus_description {
-       bottom: 5vh;
-       right: 5vw;
-       text-align: right;
-       color:white;
-    }
- 
- }
- 
- @media only screen and (max-width: 1200px) {
-    
-    .panel{
-       width:100vw;
-       height:50vh;
-       overflow: hidden;
-    }
- 
-    .split_content {
-       position: absolute;
-       width: 100vw;
-       height: 50vh;
-    }
- 
-    .description {
-       position: absolute;
-       width: 80vw;
-       top:10vh;
-       left: 10vw;
-       max-width: 60vw;
-       z-index: 99999;
-       /* color: #F19500; */
-       
-    }
- 
-    .description h1 {
-       font-weight: 900;
-       font-size: 3.5vh;
-       position: relative;
-       z-index: 99999;
-       color: #FF5218;
-    }
-    
-    .description p {
-        position: relative;
-       z-index: 99999;
-       /* color: white; */
-       font-size: 1.5vh;
-    }
- 
-    .panel img {
-       width: 100vw;
-       height:50vh;
-    }
- 
- }
+#s3_container{
+
+}
+
+/********************** Section 3 CSS ***********************/
+
+#s3 {
+   background-image: url("../images/vector2.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+/********************** Section 4 CSS ***********************/
+
+#s4 {
+   background-color: #6b5b95;
+}

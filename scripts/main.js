@@ -13,29 +13,40 @@ function opacity_range(val, max, min) {
 $(document).ready(function () {
 
   //init fagefiling
-  $('#pagepiling').pagepiling({
-    scrollingSpeed: 1400,
-    onLeave: function () {
-      $('.section.active [data-aos]').each(function () {
-        $('#test').addClass("aos-animate")
-        console.log("hello")
-      });
-    }
-  });
+  // $('#pagepiling').pagepiling({
+  //   scrollingSpeed: 1400,
+  //   onLeave: function () {
+  //     $('.section.active [data-aos]').each(function () {
+  //       $('#test').addClass("aos-animate")
+  //       console.log("hello")
+  //     });
+  //   }
+  // });
 
   // global configuration for AOS
   AOS.init({
-    delay: 800,
+    // delay: 800,
     duration: 800, // values from 0 to 3000, with step 50ms
     easing: 'ease-in-out-cubic',
   });
 
+  // init controller
+  var controller = new ScrollMagic.Controller();
+
+  // create a scene
+  new ScrollMagic.Scene({
+      duration: 100,	// the scene should last for a scroll distance of 100px
+      offset: 50	// start this scene after scrolling for 50px
+    })
+    .setPin("#my-sticky-element") // pins the element for the the scene's duration
+    .addTo(controller); // assign the scene to the controller
+
   function viewport_query(viewport) {
     if (viewport.matches) { // viewport width > 1200px (not mobile device)
       var parent = document.querySelector('#split_container'),
-        topPanel = parent.querySelector('#long_line_panel'),
+        topPanel = parent.querySelector('#long_queue_panel'),
         handle = parent.querySelector('#split_divider'),
-        tint_long_line = document.getElementById('tint_long_line'),
+        tint_long_queue = document.getElementById('tint_long_queue'),
         tint_qronus = document.getElementById('tint_qronus'),
         skewHack = 1000,
         delta = 0;
@@ -51,9 +62,9 @@ $(document).ready(function () {
         topPanel.style.width = event.clientX + skewHack + delta + 'px';
 
         width = $(window).width();
-        tint_opacity1 = opacity_range(event.clientX, 0, width) * .7;
-        tint_opacity2 = opacity_range(event.clientX, width, 0) * .7;
-        tint_long_line.style.background = `rgba(0, 0, 0, ${tint_opacity2})`;
+        tint_opacity1 = opacity_range(event.clientX, 0, width) * .5;
+        tint_opacity2 = opacity_range(event.clientX, width, 0) * .5;
+        tint_long_queue.style.background = `rgba(0, 0, 0, ${tint_opacity2})`;
         tint_qronus.style.background = `rgba(0, 0, 0, ${tint_opacity1})`;
 
         grayscale_qronus = opacity_range(event.clientX, width, 0) * 100 + '%';
@@ -64,7 +75,7 @@ $(document).ready(function () {
     } else {
       $("#qronus_statement").before($("#with_qronus")); //move with qronus before its description
       tint_qronus.style.background = `rgba(0, 0, 0, .8)`;
-      tint_long_line.style.background = `rgba(0, 0, 0, .8)`;
+      tint_long_queue.style.background = `rgba(0, 0, 0, .8)`;
     }
   }
 
