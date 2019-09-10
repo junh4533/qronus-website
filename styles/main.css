@@ -1,52 +1,29 @@
 body {
-   width: 100%;
-   height: 100%;
-   /* overflow-x: hidden; */
-   /* color:white; */
    background: rgb(233, 231, 229);
+   max-width:100vw;
+   max-height:100vh;
+   overflow-x:hidden; 
+   /* color:white; */
 }
-
-.circle {
-   position: absolute;
-   top:-40%;
-   left: -60%;
-   background: #66D3FA;
-   border-radius: 50%;
-   width: 200vh;
-   height: 200vh;
-   z-index:-1;
-}
-
-.circle2 {
-   position: absolute;
-   bottom:-50%;
-   right: -30%;
-   background: #2565AE;
-   border-radius: 50%;
-   width: 200vh;
-   height: 200vh;
-   z-index:-2;
-}
-
-.circle3 {
-   position: absolute;
-   top:-150%;
-   right: -70%;
-   background: #3C99DC;
-   border-radius: 50%;
-   width: 200vh;
-   height: 200vh;
-   z-index:-2;
-}
-
 .section_container {
-   width: 100vw;
+   display:flex;
+   justify-content: center;
+   align-items: center; 
    height: 100vh;
+   width: 100vw;
    position: relative;
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
    z-index: 999;
+}
+
+.slide{
+   display:flex; 
+   justify-content: center;
+   align-items: center; 
+}
+
+.row{
+   position: relative;
+   z-index:999;
 }
 
 i {
@@ -63,81 +40,105 @@ strong {
    color: white;
 }
 
+.nav-link:hover{
+   color:  #FF5218;
+}
+
 #logo {
    max-height: 5vh;
 }
 
 #s1 {
-   height: 100vh;
-   width: 100vw;
-   background: radial-gradient(at bottom right, #66D3FA, #3C99DC, #2565AE, rgb(3, 44, 87));
+   
+   /* background: radial-gradient(at bottom right, #66D3FA, #3C99DC, #2565AE, rgb(3, 44, 87)); */
+   background: #3C99DC;
    color: white;
 }
 
-#intro_description {
-   flex: 1;
+.circle {
+   position: absolute;
+   bottom: -50vh;
+   right: 50vw;
+   background: #66D3FA;
+   border-radius: 50%;
+   width: 200vh;
+   height: 200vh;
+   z-index:-1;
 }
 
-#intro_image {
-   flex: 1;
+.circle2 {
+   position: absolute;
+   top: -200vh;
+   left: 50vw;
+   background: #2565AE;
+   border-radius: 50%;
+   width: 200vh;
+   height: 200vh;
+   z-index:-2;
 }
 
-#kiosk,
-#phone {
-   display: inline-block;
-   width: 1vw;
-}
+/* .circle3 {
+   position: absolute;
+   top:-150%;
+   right: -70%;
+   background: #3C99DC;
+   border-radius: 50%;
+   width: 200vh;
+   height: 200vh;
+   z-index:-2;
+}  */
 
-#kiosk {
-   width: 70%;
-   /* transform: rotate(20deg); */
-}
+#kiosk{
+   max-width:100vw;
+   max-height:40vh;
+   }
 
-#phone {
-   width: 20%;
-   transform: rotate(-8deg)
-}
+@media only screen and (max-width: 1280px) {
+   #kiosk{
+      max-width:100vw;
+      max-height:30vh;
+      }
+
+ }
 
 /********************** Section 2 CSS ***********************/
 
 #s2 {
    background: rgb(216, 211, 203);
+
 }
 
-#why_qronus {
-   flex: 1;
+.progress-bar{
+   width:60%;
+   height:40px;
 }
-
-#video_container {
-   flex: 2;
-}
-
 #video {
-   width: 50%;
+   width: 80%;
 }
 
 /********************** Section 3 CSS ***********************/
 
 #s3 {}
 
-#s3 .slide {
-   flex: 1;
-   text-align: center;
-}
+
 
 
 /********************** Section 4 CSS ***********************/
 
 #s4 {
    background: rgb(216, 211, 203);
-}
-
-#s4 .slide {
-   flex: 1;
-   text-align: center;
+   background: #2565AE;
+   /* background: radial-gradient(at bottom right, #66D3FA, #3C99DC, #2565AE, rgb(3, 44, 87)); */
 }
 
 #s4 .slide img {
    width: 20vw;
    height: 15vh;
 }
+
+/* #test{
+   width: 15vw;
+   height: 15vw;
+   border-radius:50%;
+   background:lightblue;
+} */
