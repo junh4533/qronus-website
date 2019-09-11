@@ -18,4 +18,21 @@ $(document).ready(function () {
     easing: 'ease-in-out-cubic',
   });
 
+  document.addEventListener('aos:in:progress_bar', setTimeout(
+    function () {
+      document.getElementById("progress_bar").classList.add("grow");
+      // setTimeout(
+      //   function () {
+      //     document.getElementById("progress_bar").classList.remove("grow");
+      //     console.log("removed");
+      //   }, 5000)
+    }, 1000)
+    
+    );
+
+  // document.addEventListener('aos:out:progress_bar', setTimeout(
+  //   function () {
+  //     document.getElementById("progress_bar").classList.remove("grow");
+  //   }, 1000));
+
 });

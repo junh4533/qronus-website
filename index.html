@@ -6,6 +6,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
     <!-- Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Archivo' rel='stylesheet'>
 
@@ -16,7 +25,8 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.6/jquery.pagepiling.min.css"> -->
 
     <!-- AOS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.css">
 
     <!-- Main CSS -->
     <link rel="stylesheet" type="text/css" href="styles/main.css">
@@ -61,15 +71,15 @@
             <div class="circle"></div>
             <div class="circle2"></div>
             <div class="col-0 col-xl-1"></div>
-            <div class="col-12 col-xl-5 slide" data-aos="slide-up">
+            <div class="col-12 col-xl-5 slide" data-aos="fade-up">
                 <img id="kiosk" src="../images/kiosk2.png" alt="">
             </div>
-            <div class="col-12 col-xl-5 slide" data-aos="slide-up">
+            <div class="col-12 col-xl-5 slide" data-aos="fade-up">
                 <div>
                     <h1>The first <strong>self-manageable</strong> queuing system</h1>
                     <p>Don't keep your clients waiting, keep them anticipating. Nobody
                         wants to wait in line for an hour.
-                        With Qronus you can optimize appointment scheduling and manage them in one singlesystem.</p>
+                        With Qronus you can optimize appointment scheduling and manage them in one single system.</p>
                     <a href="#" class="btn btn-success" id="request_demo" role="button">Request a demo</a>
                     <a href="#" class="btn btn-info" id="request_demo" role="button">Contact Us</a>
                 </div>
@@ -80,30 +90,30 @@
 
     <div class="section_container container-fluid" id="s2">
         <div class="row">
-            <div class="col-12 col-lg-4 slide" data-aos="slide-up">
+            <div class="col-12 col-xl-4 slide" data-aos="fade-up" data-aos-delay="300" data-aos-id="step1">
                 <div>
                     <i class="fas fa-map-marker-alt"></i>
                     <h3>Check in</h3>
                     <p>Customers can quickly check in with the kiosk using their IDs</p>
                 </div>
             </div>
-            <div class="col-12 col-lg-4 slide" data-aos="slide-up">
+            <div class="col-12 col-xl-4 slide" data-aos="fade-up" data-aos-delay="1500" data-aos-id="step2">
                 <div>
                     <i class="fas fa-globe"></i>
                     <h3>Wait to be called, from anywhere</h3>
                     <p>Clients gets a notification when it's almost their turn.</p>
                 </div>
             </div>
-            <div class="col-12 col-lg-4 slide" data-aos="slide-up">
+            <div class="col-12 col-xl-4 slide" data-aos="fade-up" data-aos-delay="3000" data-aos-id="step3">
                 <div>
                     <i class="fas fa-user-check"></i>
                     <h3>Resolve, escalate, or postpone the issue</h3>
-                    <p>Clients receives a personalized message</p>
+                    <p>Clients receives a personalized message to thank them for their visit.</p>
                 </div>
             </div>
-            <div class="col-12 col-lg-12" data-aos="slide-up">
+            <div class="col-12 col-xl-12" data-aos="fade-in" data-aos-id="progress_bar">
                 <div class="progress">
-                    <div class="progress-bar"></div>
+                    <div class="progress-bar" id="progress_bar"></div>
                 </div>
             </div>
 
@@ -144,15 +154,15 @@
                     <img src="images/ID.png" alt="">
                     <h3>Faster check in using LDAP</h3>
                     <p>Unlike other queue management systems, Qronus can be configured to access your school's active
-                        directory.
-                        This allows students to quickly check in using their school issued IDs.</p>
+                        directory. This allows students to quickly check in using their school issued IDs
+                    and <strong>speed up queue times by up to 80%</strong></p>
                 </div>
             </div>
             <div class="col-12 col-lg-4 slide" data-aos="slide-up">
                 <div>
                     <div id="test"><img src="images/customize.png" alt=""></div>
                     <h3>Easily customizable</h3>
-                    <p>It takes a couple of seconds to tailor the appearance of your app. </p>
+                    <p>You can tailor the appearance of your app within a <strong>couple of seconds.</strong></p>
                 </div>
             </div>
             <div class="col-12 col-lg-4 slide" data-aos="slide-up">
@@ -160,9 +170,7 @@
                     <img src="images/kace.jpg" alt="">
                     <h3>Fully compatible with ITAM systems</h3>
                     <p>IT asset management systems are crucial when it comes to tech support. Our app can generate
-                        support
-                        tickets
-                        for ITAMs like Quest KACE.
+                        support tickets for ITAMs like Quest KACE.
                     </p>
                 </div>
             </div>
@@ -181,11 +189,9 @@
     <!-- Page Piling -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.6/jquery.pagepiling.min.js"></script> -->
 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-
     <!-- AOS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.js"></script>
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/75c80322e7.js"></script>
