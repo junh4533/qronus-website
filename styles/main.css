@@ -1,10 +1,21 @@
 body {
-   /* background: rgb(233, 231, 229); */
    max-width: 100vw;
    max-height: 100vh;
    overflow-x: hidden;
-   /* color:white; */
 }
+
+.navbar{
+   transition:500ms ease;
+ }
+
+.scrolled{
+   background:rgb(48, 48, 48);
+   
+ }
+
+ .scrolled a{
+   color:white;
+ }
 
 .section_container {
    display: flex;
@@ -20,18 +31,29 @@ body {
    align-items: center;
 }
 
-.row{
+/* .row{
    position: relative;
    z-index: 9999;
-}
+} */
 
 i {
    color: #FF5218;
    font-size: 500%;
 }
 
-strong {
+b{
    color: #FF5218;
+}
+
+.orange-button{
+   background: #FF5218;
+   color:white;
+   font-weight: bold;
+}
+
+.orange-button:hover{
+   background: rgb(221, 73, 23);
+   color:white;
 }
 
 /********************** Section 1 CSS ***********************/
@@ -51,72 +73,26 @@ strong {
    max-height: 5vh;
 }
 
-#s1 {
-
-   /* background: radial-gradient(at bottom right, #66D3FA, #3C99DC, #2565AE, rgb(3, 44, 87)); */
-   /* background: #3C99DC; */
-   /* color: white; */
-}
-
 .bg{
    position: absolute;
    top: 0;
    left: 0;
    width:100vw;
    height:100vh;
-   /* background: #3C99DC; */
-   /* background: linear-gradient(#3C99DC, rgb(165, 218, 255)); */
    z-index:-5;
 }
 
-.circle {
-   position: absolute;
-   bottom: -20vh;
-   right: 50vw;
-   background: #66D3FA;
-   border-radius: 50%;
-   width: 200vh;
-   height: 200vh;
-   z-index: 1;
-   filter: blur(2px);
-}
 
-.circle2 {
-   position: absolute;
-   top: -200vh;
-   left: 50vw;
-   background: #2565AE;
-   border-radius: 50%;
-   width: 200vh;
-   height: 200vh;
-   z-index: 1;
-   filter: blur(2px);
-}
-
-/* .circle3 {
-   position: absolute;
-   top:-150%;
-   right: -70%;
-   background: #3C99DC;
-   border-radius: 50%;
-   width: 200vh;
-   height: 200vh;
-   z-index:-2;
-}  */
-
-#kiosk {
-   max-width: 100vw;
-   max-height: 40vh;
+#waiting {
+   max-width: 90%;
+   max-height: 90%;
+   object-fit: contain;
 }
 
 /********************** Section 2 CSS ***********************/
 
 #s2 {
    background: rgb(237, 245, 255);
-   /* background: linear-gradient(rgb(165, 218, 255), #3C99DC); */
-   /* background: #DDDDDD; */
-   /* background: rgb(38, 132, 199); */
-   /* background: rgb(47, 134, 196); */
    text-align: center;
 }
 
@@ -125,6 +101,12 @@ strong {
    width: 0;
    height: 40px;
    background:#FF5218;
+}
+
+.steps img{
+   max-width: 50%;
+   max-height: 50%;
+   object-fit: contain;
 }
 
 .grow {
@@ -156,7 +138,11 @@ strong {
 
 /********************** Section 3 CSS ***********************/
 
-#s3 {}
+#s3 h1{
+   display: inline-block;
+   padding-bottom: 1%;
+   border-bottom: .2em solid #FF5218;
+}
 
 #video {
    width: 80%;
@@ -171,8 +157,9 @@ strong {
 }
 
 #s4 .slide img {
-   width: 20vw;
-   height: 15vh;
+   max-width: 50%;
+   max-height: 50%;
+   object-fit: contain;
 }
 
 /************************************ FOR MOBILE DEVICES ************************************/
@@ -180,10 +167,6 @@ strong {
 @media only screen and (max-width: 1280px) {
 
    /********************** Section 1 CSS ***********************/
-   #kiosk {
-      max-width: 100vw;
-      max-height: 30vh;
-   }
 
    /********************** Section 2 CSS ***********************/
 
@@ -197,9 +180,6 @@ strong {
 
    /********************** Section 3 CSS ***********************/
 
-   #video {
-      /* height:30vh; */
-   }
 
    /********************** Section 4 CSS ***********************/
 }
