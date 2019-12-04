@@ -1,7 +1,17 @@
 body {
-   max-width: 100vw;
-   max-height: 100vh;
+   width:100%;
+   /* max-height: 100vh; */
    overflow-x: hidden;
+}
+
+.full_image {
+   width: 100%;
+}
+
+.underline_heading {
+   display:inline-block;
+   padding-bottom: 1%;
+   border-bottom: .2em solid #FF5218;
 }
 
 .navbar{
@@ -21,8 +31,7 @@ body {
    display: flex;
    justify-content: center;
    align-items: center;
-   height: 100vh;
-   width: 100vw;
+   min-height: 80vh;
 }
 
 .slide {
@@ -57,6 +66,11 @@ b{
 }
 
 /********************** Section 1 CSS ***********************/
+
+#s1{
+   height:100vh;
+}
+
 .nav-link {
    /* color: white; */
    letter-spacing: 3px;
@@ -134,32 +148,31 @@ b{
 }
 
 
-
-
 /********************** Section 3 CSS ***********************/
 
-#s3 h1{
-   display: inline-block;
-   padding-bottom: 1%;
-   border-bottom: .2em solid #FF5218;
+#instant_loading {
+   width: 30%;
+   margin:auto;
 }
-
-#video {
-   width: 80%;
-}
-
 
 /********************** Section 4 CSS ***********************/
 
 #s4 {
    background: rgb(237, 245, 255);
    text-align: center;
+   height:80vh;
 }
 
 #s4 .slide img {
    max-width: 50%;
    max-height: 50%;
    object-fit: contain;
+}
+
+footer{
+   position: relative;
+   bottom: 0;
+   background: rgb(237, 245, 255);
 }
 
 /************************************ FOR MOBILE DEVICES ************************************/
