@@ -34,97 +34,128 @@
 
 <body>
 
-    <!-- Navbar-->
-    <nav class="navbar navbar-expand-sm fixed-top">
-        <a href="#" class="navbar-brand">
-            <img src="/images/qronus_logo.png" class="img-fluid" id="logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="fa fa-bars navbar-toggle-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="nav navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Products</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Support</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
 
-    <div class="section_container container-fluid" id="s1">
-        <div class="bg"></div>
 
-        <div class="row">
-
-            <div class="col-0 col-xl-1"></div>
-            <div class="col-12 col-xl-5 slide" data-aos="fade-up">
-                <img id="waiting" src="../images/waiting.png" alt="">
+    <div class="section-container container-fluid" id="s1">
+        <!-- Navbar-->
+        <nav class="navbar navbar-expand-sm">
+            <a href="#" class="navbar-brand">
+                <img src="/images/qronus-logo.png" class="img-fluid" id="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="fa fa-bars navbar-toggle-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Support</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                </ul>
             </div>
-            <div class="col-12 col-xl-5 slide" data-aos="fade-up">
-                <div>
-                    <h1>The first <b>self-manageable</b> queuing system</h1>
-                    <p>Don't keep your clients waiting, keep them anticipating. Nobody
-                        wants to wait in line for an hour.
-                        With Qronus you can optimize appointment scheduling and manage them in one single system.</p>
-                    <a href="#" class="btn orange-button" role="button">Request a demo</a>
+        </nav>
+        <div class="flexbox-center">
+            <div class="bg"></div>
+
+            <div class="row">
+
+                <div class="col-0 col-xl-1"></div>
+                <div class="col-12 col-xl-5" data-aos="fade-up">
+                    <img id="waiting" src="../images/waiting.png" alt="">
                 </div>
+                <div class="col-12 col-xl-5" data-aos="fade-up">
+                    <div class="flexbox-center">
+                        <div>
+                            <h1 id="home-heading">The first <b>self-manageable</b> queuing system</h1>
+                            <br>
+                            <h5>Don't keep your clients waiting, keep them anticipating. Nobody
+                                wants to wait in line for an hour.
+                                With the Qronus Queue Management you can optimize appointment scheduling and manage them
+                                in one single system.
+                            </h5>
+                            <br>
+                            <a href="#" class="btn orange-button" role="button">Request a demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-0 col-xl-1"></div>
             </div>
-            <div class="col-0 col-xl-1"></div>
         </div>
+
     </div>
 
-    <div class="section_container container-fluid" id="s2">
+    <div class="section-container container-fluid flexbox-center" id="s2">
 
-        <div class="row">
-            <div class="col-12 col-lg-3 mx-auto slide" data-aos="fade-up" data-aos-delay="300" data-aos-id="step1">
-                <div class="steps">
+        <div id="demo" class="carousel slide" data-ride="carousel">
+
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
                     <img src="images/check-in.png" alt="">
-                    <h3>Check in</h3>
-                    <p>Customers can quickly check in using their school ID.</p>
+                    <div class="caption">
+                        <h1 class="underline-heading">Fast and Inutuitive <b>Check In</b></h1> <br>
+                        <p>
+                            Unlike other queueing systems, the Qronus Queueing system
+                            supports magnetic card swiping for a faster check in.
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-0 col-lg-1 mx-auto slide" data-aos="fade-up" data-aos-delay="1200" data-aos-id="step2">
-                    <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
-            </div>
-            
-            <div class="col-12 col-lg-3 mx-auto slide" data-aos="fade-up" data-aos-delay="1500" data-aos-id="step2">
-                <div class="steps">
+                <div class="carousel-item">
                     <img src="images/qronus-rendering.png" alt="">
-                    <h3>Wait to be called, from anywhere</h3>
-                    <p>Clients receive a notification on their laptop, phone, or any mobile device
-                        when it's almost their turn.</p>
+                    <div class="caption">
+                        <h1 class="underline-heading">Organized and Automated <b>Queueing</b></h1> <br>
+                        <p>
+                            Instead of using pen and paper to record the waitlist,
+                            our app automates the entire queueing process.
+                            When it is their turn, users are notified via the TV Display
+                            and a personalized text message.
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-0 col-lg-1 mx-auto slide" data-aos="fade-up" data-aos-delay="2700" data-aos-id="step3">
-                    <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
-            </div>
-            <div class="col-12 col-lg-3 mx-auto slide" data-aos="fade-up" data-aos-delay="3000" data-aos-id="step3">
-                <div class="steps">
+                <div class="carousel-item">
                     <img src="images/actions.png" alt="">
-                    <h3>Resolve, escalate, or postpone the issue</h3>
-                    <p>Clients receives a personalized message to thank them for their visit.</p>
+                    <div class="caption">
+                        <h1 class="underline-heading">Innovative <b>Monitoring</b></h1> <br>
+                        <p>
+                            Our app generates performance metrics like
+                            clients per hour, average queue time, and count per issue
+                            to optimize your queueing time. Our app also convieniently generates
+                            ITAM compatible support tickets to document the issue.
+                        </p>
+                    </div>
                 </div>
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
             </div>
+
+            <!-- <div class="indicator-spacer"></div> -->
+
         </div>
+
+
+
     </div>
 
-    <div class="section_container container-fluid" id="s3">
+    <div class="section-container flexbox-center container-fluid" id="s3">
         <div class="row">
-            <div class="col-10 col-xl-4 slide mx-auto" data-aos="slide-right">
+            <div class="col-10 col-xl-4 mx-auto" data-aos="slide-right">
                 <div>
-                    <h1 class="underline_heading">Unlimited <b>Customization</b></h1>
+                    <h1 class="underline-heading">Unlimited <b>Customization</b></h1>
                     <p>Qronus is a customizable queue management system that optimizes appointment scheduling.
 
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
@@ -138,59 +169,71 @@
                     <a href="#" class="btn btn-success" role="button">Start today</a>
                 </div>
             </div>
-            <div class="col-10 col-xl-6 slide mx-auto" data-aos="slide-left">
-                <img class="full_image" src="images/gifs/customization.gif" alt="">
+            <div class="col-10 col-xl-6 mx-auto" data-aos="slide-left">
+                <img class="full-image" src="images/gifs/customization.gif" alt="">
             </div>
         </div>
 
     </div>
 
-    <div class="section_container container-fluid" id="s4">
-        <div class="row">
-            <div class="col-12 col-lg-4 slide" data-aos="slide-up">
-                <div>
-                    <img src="images/swiper.png" alt="">
-                    <br><br>
-                    <div>
-                        <h3>Faster check in using LDAP</h3>
-                        <p>Unlike other queue management systems, Qronus can be configured to access
-                            your school's active
-                            directory. This allows students to quickly check in using their school issued IDs
-                            and <b>speed up queue times by up to 80%</b>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-4 slide" data-aos="slide-up">
-                <div>
-                    <img src="images/versatility.png" alt="">
-                    <br><br>
-                    <div>
-                        <h3>Easily customizable</h3>
-                        <p>You can tailor the appearance of your app within a <b>couple of seconds.</b></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-4 slide" data-aos="slide-up">
-                <div>
-                    <img src="images/kace.jpg" alt="">
-                    <br><br>
-                    <div>
-                        <h3>Fully compatible with ITAM systems</h3>
-                        <p>IT asset management systems are crucial when it comes to tech support. Our app can generate
-                            <b>support tickets</b> for ITAMs like Quest KACE.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="s5" class="section_container container-fluid">
+    <div class="section-container flexbox-center container-fluid" id="s4">
         <div class="row">
             <div class="col-12 my-3 text-center">
-                <div id="instant_loading">
-                    <h1 class="underline_heading">Instant <b>Loading</b></h1>
+                <div class="top-heading">
+                    <h1 class="underline-heading">key <b>Features</b></h1>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 my-3" data-aos="slide-up">
+                <div class="flexbox-center">
+                    <div>
+                        <img src="images/swiper.png" alt="">
+                        <br><br>
+                        <div>
+                            <h3>Faster check in using LDAP</h3>
+                            <p>Unlike other queue management systems, Qronus can be configured to access
+                                your school's active
+                                directory. This allows students to quickly check in using their school issued IDs
+                                and <b>speed up queue times by up to 80%</b>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 my-3" data-aos="slide-up">
+                <div class="flexbox-center">
+                    <div>
+                        <img src="images/versatility.png" alt="">
+                        <br><br>
+                        <div>
+                            <h3>Easily customizable</h3>
+                            <p>You can tailor the appearance of your app within a <b>couple of seconds.</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 my-3" data-aos="slide-up">
+                <div class="flexbox-center">
+                    <div>
+                        <img src="images/kace.jpg" alt="">
+                        <br><br>
+                        <div>
+                            <h3>Fully compatible with ITAM systems</h3>
+                            <p>IT asset management systems are crucial when it comes to tech support. Our app can
+                                generate
+                                <b>support tickets</b> for ITAMs like Quest KACE.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="s5" class="section-container container-fluid">
+        <div class="row">
+            <div class="col-12 my-3 text-center">
+                <div class="top-heading">
+                    <h1 class="underline-heading">Instant <b>Loading</b></h1>
                     <br><br>
                     <p>
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
@@ -206,20 +249,22 @@
             </div>
             <div class="col-md-2 my-3"></div>
             <div class="col-12 col-md-4 my-3 mx-auto">
-                <img class="full_image" src="images/gifs/kiosk_submit.gif" alt="">
+                <img class="full-image" src="images/gifs/kiosk-submit.gif" alt="">
             </div>
             <div class="col-12 col-md-4 my-3 mx-auto">
-                <img class="full_image" src="images/gifs/order_table.gif" alt="">
+                <img class="full-image" src="images/gifs/order-table.gif" alt="">
             </div>
             <div class="col-md-2 my-3"></div>
         </div>
     </div>
 
-    <footer class="text-center">
-          Q-Ronus &copy; 2019 | All Rights Reserved
+    <footer>
+        <div class="flexbox-center">
+            Q-Ronus &copy; 2019 | All Rights Reserved
+        </div>
     </footer>
 
-  
+
 
     <!-- jQuery library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

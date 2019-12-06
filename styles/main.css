@@ -1,17 +1,30 @@
 body {
    width:100%;
-   /* max-height: 100vh; */
    overflow-x: hidden;
 }
 
-.full_image {
+.flexbox-center {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.full-image {
    width: 100%;
 }
 
-.underline_heading {
+.top-heading {
+   width:50%;
+   margin: auto;
+}
+
+.underline-heading {
    display:inline-block;
    padding-bottom: 1%;
    border-bottom: .2em solid #FF5218;
+   font-size:3.5em;
 }
 
 .navbar{
@@ -26,24 +39,6 @@ body {
  .scrolled a{
    color:white;
  }
-
-.section_container {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   min-height: 80vh;
-}
-
-.slide {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-
-/* .row{
-   position: relative;
-   z-index: 9999;
-} */
 
 i {
    color: #FF5218;
@@ -65,10 +60,16 @@ b{
    color:white;
 }
 
+.section-container {
+   min-height: 80vh;
+}
+
 /********************** Section 1 CSS ***********************/
 
 #s1{
    height:100vh;
+   background: rgb(233, 228, 228);
+   background-image: linear-gradient(rgb(233, 228, 228),rgb(248, 239, 198));
 }
 
 .nav-link {
@@ -81,6 +82,10 @@ b{
 
 .nav-link:hover {
    color: #FF5218;
+}
+
+#home-heading {
+   font-size: 4em;
 }
 
 #logo {
@@ -98,8 +103,8 @@ b{
 
 
 #waiting {
-   max-width: 90%;
-   max-height: 90%;
+   max-width: 100%;
+   max-height: 100%;
    object-fit: contain;
 }
 
@@ -108,52 +113,47 @@ b{
 #s2 {
    background: rgb(237, 245, 255);
    text-align: center;
+   height:80vh;
 }
 
-
-#progress_bar {
-   width: 0;
-   height: 40px;
-   background:#FF5218;
+.carousel-item img {
+   width: 80vmin;
+   height: 50vmin;
+   margin-right: 5%;
 }
 
-.steps img{
-   max-width: 50%;
-   max-height: 50%;
-   object-fit: contain;
+.carousel-item * {
+   display: inline-block;
 }
 
-.grow {
-   animation-name: progress_bar_grow;
-   animation-duration: 5.2s;
-   animation-fill-mode: forwards;
+.caption {
+   width:40%;
 }
 
-@keyframes progress_bar_grow {
-   0% {
-      width: 0%;
-   }
+.caption p{
+   font-size: 1.5em;
+}
 
-   20% {
-      width: 20%;
-   }
+.carousel-inner{
+   overflow: visible;
+}
 
-   60% {
-      width: 50%;
-   }
+.carousel-indicators {
+   height:10%;
+   top: 110%;
+}
 
-   100% {
-      width: 100%;
-   }
+.carousel-indicators li {
+   width: 1em;
+   height: 1em;
+   border-radius: 50%;
+   background-color: #FF5218;
 }
 
 
 /********************** Section 3 CSS ***********************/
 
-#instant_loading {
-   width: 30%;
-   margin:auto;
-}
+
 
 /********************** Section 4 CSS ***********************/
 
@@ -163,13 +163,14 @@ b{
    height:80vh;
 }
 
-#s4 .slide img {
+#s4 img {
    max-width: 50%;
    max-height: 50%;
    object-fit: contain;
 }
 
 footer{
+   height: 10vmin;
    position: relative;
    bottom: 0;
    background: rgb(237, 245, 255);
