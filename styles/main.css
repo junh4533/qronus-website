@@ -1,20 +1,56 @@
-html{
+html {
    scroll-behavior: smooth;
 }
 
 body {
-   width:100%;
+   width: 100%;
    overflow-x: hidden;
    background-color: #b2dffb;
-   padding-top: 8vh; 
+   padding-top: 8vh;
 }
 
-.full_image {
-   width: 100%;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   display: inline-block;
+}
+
+h1 {
+   font-size: 3rem;
+}
+
+h2 {
+   font-size: 2.5rem;
+}
+
+h3 {
+   font-size: 2rem;
+}
+
+h4 {
+   font-size: 1.5rem;
+}
+
+h5 {
+   font-size: 1.25rem;
+}
+
+h6,
+p {
+   font-size: 1rem;
+}
+
+.flex-center {
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .underline_heading {
-   display:inline-block;
+   display: inline-block;
    padding-bottom: 1%;
    border-bottom: .2em solid #FF5218;
 }
@@ -37,26 +73,26 @@ i {
    font-size: 500%;
 }
 
-b{
+b {
    color: #FF5218;
 }
 
 /***************** Flip Cards ******************/
-#s1_5{
-   background-color: #e7a4e4;
-   height: 92vh;
-   margin-bottom: 20vh;
+#s1_5 {
+   /* background-color: #e7a4e4; */
+   /* height: 92vh; */
+   /* margin-bottom: 20vh; */
 }
 
-#cards{
+#cards {
    padding-top: 8vh;
 }
 
-#card{
+#card {
    background-color: #b2dffb;
 }
 
-.col-lg-4{
+.col-lg-4 {
    padding-left: 0%;
    padding-right: 0%;
 }
@@ -64,59 +100,62 @@ b{
 .flip-card {
    background-color: transparent;
    width: 100%;
-   height: 100vh;
+   height: 50vh;
    margin-bottom: 3%;
- }
- 
- .flip-card-inner {
+}
+
+.flip-card-inner {
    position: relative;
    width: 100%;
    height: 100%;
    text-align: center;
    transition: transform 0.6s;
    transform-style: preserve-3d;
-   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
- }
- 
- .flip-card:hover .flip-card-inner {
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
    transform: rotateY(180deg);
- }
- 
- .flip-card-front, .flip-card-back {
+}
+
+.flip-card-front,
+.flip-card-back {
    position: absolute;
    width: 100%;
    height: 100%;
    backface-visibility: hidden;
- }
- 
- .flip-card-front {
-    width: 100%;
-    height: 100%;
-    color: black;
- }
- .flip-card-front img{
-    height: 100%;
-    width: 100%;
- }
- 
- .flip-card-back {
+}
+
+.flip-card-front {
+   width: 100%;
+   height: 100%;
+   color: black;
+}
+
+.flip-card-front img {
+   height: 70%;
+   width: 70%;
+}
+
+.flip-card-back {
    background-color: #CAFFB9;
    color: #123C73;
    transform: rotateY(180deg);
- }
+}
+
 /********************** Section 1 CSS ***********************/
-#s1{
+#s1 {
    background: #e7a4e4;
    height: 92vh;
 }
 
-#s1_text{
+#s1_text {
    margin-bottom: 25%
 }
 
-#s1_text h1{
+#s1_text h1 {
    font-size: 300%;
-   color:white;
+   color: white;
    /* height: 400px;
    width: 800px; */
    display: flex;
@@ -124,10 +163,10 @@ b{
    justify-content: center;
    text-align: center;
    margin-bottom: 20px;
-   
+
 }
 
-#s1_text button{
+#s1_text button {
    width: 30%;
    height: 10%;
    display: flex;
@@ -137,19 +176,19 @@ b{
    margin-right: auto;
 }
 
-#s1_text button b{
+#s1_text button b {
    color: white;
    font-size: larger;
 }
 
-.s1img{
+.s1img {
    margin-top: 30%;
    display: flex;
    margin-left: auto;
    margin-right: auto;
    width: 90%;
    height: 200%;
- }
+}
 
 #logo {
    max-height: 8vh;
@@ -160,6 +199,7 @@ b{
    max-height: 90%;
    object-fit: contain;
 }
+
 /********************** Nav Bar ***********************/
 nav {
    background: #1b262c;
@@ -168,29 +208,51 @@ nav {
 }
 
 .nav-link {
-   /* color: white; */
    letter-spacing: 3px;
-   font-weight:600;
-   font-size:1.1em;
+   font-weight: 600;
+   font-size: 1.1em;
    color: white;
 }
 
 .nav-link:hover {
    color: #FF5218;
 }
+
 /********************** Section 2 CSS ***********************/
 
-#carousel_img{
+#carousel_img {
    width: auto;
    height: 60vh;
-} 
+}
 
 #s2 {
-   padding-top: 8vh;
+   /* padding-top: 8vh; */
    background: #b2dffb;
    text-align: center;
+   overflow-y: scroll;
+   position: relative;
    height: 100vh;
 }
+
+#s2::-webkit-scrollbar {
+   display: none;
+ }
+
+#side-nav {
+   position: sticky;
+   left: 0;
+   top: 20%;
+   height: 30%
+}
+
+hr {
+   position: relative;
+   width: 80%;
+   margin: .5em 0 0 0;
+   border-top: .2em solid #FF5218;
+}
+
+
 /********************** Section 2 CSS Carousel****************/
 
 .icon-cards {
@@ -246,105 +308,131 @@ nav {
 }
 
 @keyframes carousel {
-   0%, 17.5% {
+
+   0%,
+   17.5% {
       transform: translateZ(-35vw) rotateY(0);
-  }
-   27.5%, 45% {
+   }
+
+   27.5%,
+   45% {
       transform: translateZ(-35vw) rotateY(-120deg);
-  }
-   55%, 72.5% {
+   }
+
+   55%,
+   72.5% {
       transform: translateZ(-35vw) rotateY(-240deg);
-  }
-   82.5%, 100% {
+   }
+
+   82.5%,
+   100% {
       transform: translateZ(-35vw) rotateY(-360deg);
-  }
+   }
 }
 
 @keyframes jelly {
    from {
       transform: scale(1, 1);
-  }
+   }
+
    30% {
       transform: scale(1.25, 0.75);
-  }
+   }
+
    40% {
       transform: scale(0.75, 1.25);
-  }
+   }
+
    50% {
       transform: scale(1.15, 0.85);
-  }
+   }
+
    65% {
       transform: scale(0.95, 1.05);
-  }
+   }
+
    75% {
       transform: scale(1.05, 0.95);
-  }
+   }
+
    to {
       transform: scale(1, 1);
-  }
+   }
 }
 
 
 
- @keyframes rotate {
-   0%, 20%, 99.7619047619%, 100% {
-     transform: rotateY(45deg) scale(0.6);
-     right: 0;
-     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-     z-index: -1;
-     -webkit-filter: opacity(100%) blur(3px);
+@keyframes rotate {
+
+   0%,
+   20%,
+   99.7619047619%,
+   100% {
+      transform: rotateY(45deg) scale(0.6);
+      right: 0;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      z-index: -1;
+      -webkit-filter: opacity(100%) blur(3px);
    }
-   24.7619047619%, 45% {
-     transform: rotateY(0deg) scale(1);
-     right: 40%;
-     box-shadow: 0 0 20px black;
-     z-index: 100;
-     -webkit-filter: opacity(100%) blur(0px);
+
+   24.7619047619%,
+   45% {
+      transform: rotateY(0deg) scale(1);
+      right: 40%;
+      box-shadow: 0 0 20px black;
+      z-index: 100;
+      -webkit-filter: opacity(100%) blur(0px);
    }
-   49.7619047619%, 70% {
-     transform: rotateY(-45deg) scale(0.6);
-     right: 81%;
-     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-     z-index: -1;
-     -webkit-filter: opacity(100%) blur(3px);
+
+   49.7619047619%,
+   70% {
+      transform: rotateY(-45deg) scale(0.6);
+      right: 81%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      z-index: -1;
+      -webkit-filter: opacity(100%) blur(3px);
    }
-   74.7619047619%, 95% {
-     transform: rotateY(-90deg) scale(0);
-     right: 0%;
-     box-shadow: 0 0 10px rgba(0, 0, 0, 0);
-     z-index: 0;
-     -webkit-filter: opacity(0%) blur(0px);
+
+   74.7619047619%,
+   95% {
+      transform: rotateY(-90deg) scale(0);
+      right: 0%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+      z-index: 0;
+      -webkit-filter: opacity(0%) blur(0px);
    }
- }
+}
 
 /********************** Section 3 CSS ***********************/
 
 #instant_loading {
    width: 30%;
-   margin:auto;
+   margin: auto;
 }
-#s3{      
+
+#s3 {
    background: #d3f4ff;
    height: 100vh;
 }
+
 .container {
-   margin-left:auto;
-   margin-right:auto;
+   margin-left: auto;
+   margin-right: auto;
    width: 80%;
    color: #333;
-   
- }
- 
- .slick-slide {
+
+}
+
+.slick-slide {
    text-align: center;
    color: #419be0;
    background: white;
-   margin:10px;
- }
- 
- h4{
-   text-align:center;
- }
+   margin: 10px;
+}
+
+h4 {
+   text-align: center;
+}
 
 
 
@@ -353,16 +441,16 @@ nav {
 #s4 {
    background: #ffc55c;
    text-align: center;
-   height:100vh;
+   height: 100vh;
 }
 
- #s4 .slide img {
-width: 100%;
+#s4 .slide img {
+   width: 100%;
    object-fit: contain;
 }
 
 /* s5 Section */
-#s5 p{
+#s5 p {
    font-weight: bolder;
    font-size: 20px;
 }

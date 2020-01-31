@@ -17,13 +17,13 @@
         <meta name="theme-color" content="#ffffff">
 
         <!-- Bootstrap -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 
         <!-- Main CSS -->
         <link rel="stylesheet" type="text/css" href="styles/main.css">
 
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script> -->
 
     </head>
 
@@ -122,12 +122,15 @@
                         <div class="flip-card" id="card">
                             <div class="flip-card-inner">
                                 <div class="flip-card-front">
-                                    <img src="images/queue_waiting.jpg" alt="">
+                                    <img src="images/swiper.png" alt="">
                                 </div>
                                 <div class="flip-card-back">
-                                    <h1>No more waiting in lines</h1>
-                                    <p>BLAH BLAH</p>
-                                    <p>BLAH BLAH Line 2</p>
+                                    <h3>LDAP</h3>
+                            <p>Unlike other queue management systems, Qronus can be configured to access
+                                your school's active
+                                directory. This allows students to quickly check in using their school issued IDs
+                                and <b>speed up queue times by up to 80%</b>
+                            </p>
                                 </div>
                             </div>
                         </div>
@@ -136,12 +139,11 @@
                         <div class="flip-card" id="card">
                             <div class="flip-card-inner">
                                 <div class="flip-card-front">
-                                    <img src="images/metrics.jpg" alt="">
+                                    <img src="images/versatility.png" alt="">
                                 </div>
                                 <div class="flip-card-back">
-                                    <h1>Something cool about metrics</h1>
-                                    <p>WOAH</p>
-                                    <p>OOOOOOO AAAAHHHH</p>
+                                    <h3>Advanced Customization</h3>
+                                    <p>You can tailor the appearance of your app within a <b>couple of seconds.</b></p>
                                 </div>
                             </div>
                         </div>
@@ -150,12 +152,14 @@
                         <div class="flip-card" id="card">
                             <div class="flip-card-inner">
                                 <div class="flip-card-front">
-                                    <img src="images/mobile_notifications.jpg" alt="">
+                                    <img src="images/kace.jpg" alt="">
                                 </div>
                                 <div class="flip-card-back">
-                                    <h1>Mobile Notifications</h1>
-                                    <p>Get a text when its your turn</p>
-                                    <p>LINE 2 temp</p>
+                                    <h3>ITAM Compatible</h3>
+                                    <p>IT asset management systems are crucial when it comes to tech support. Our app can
+                                        generate
+                                        <b>support tickets</b> for ITAMs like Quest KACE.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -164,34 +168,112 @@
             </div>
         </div>
         <!-- Section 2 -->
-        <div class="section_container container-fluid" id="s2">
-            <figure class="icon-cards mt-3" style="margin-right: auto; margin-left: auto;" id="icon-cards">
-                <div class="icon-cards__content">
-                    <div class="icon-cards__item d-flex align-items-center justify-content-center"><span class="h1"><img
-                                src="images/check-in.png" alt="" id="carousel_img" />
-                            <p style="color:black;"><b>Check in</b><br>Customers can quickly check in using their school
-                                ID.
-                            </p>
-                        </span></div>
-                    <div class="icon-cards__item d-flex align-items-center justify-content-center"><span class="h1"><img
-                                src="images/qronus-rendering.png" alt="" id="carousel_img" />
-                            <p style="color:black;"><b>Wait to be called, from anywhere</b><br>Clients receive a
-                                notification via text when it's
-                                almost their turn</p>
-                        </span></div>
-                    <div class="icon-cards__item d-flex align-items-center justify-content-center"><span class="h1"><img
-                                src="images/actions.png" alt="" id="carousel_img" />
-                            <p style="color:black;"><b>Resolve, escalate, or postpone the issue</b><br>Clients receives
-                                a
-                                personalized message to
-                                thank them for their visit.</p style="color:black;">
-                        </span></div>
+        <div class="container-fluid" id="s2"  data-spy="scroll" data-target="#side-nav" data-offset="50">
+            <div class="row my-5">
+                <div class="col-2">
+                    <nav class="navbar navbar-dark" id="side-nav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#step1">Step 1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#step2">Step 2</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#step3">Step 3</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#step4">Step 4</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-            </figure>
+                <div class="col-10 text-left">
+
+                    <div id="step1" class="my-5">
+                        <div class="row ">
+                            <div class="col-12 col-lg-4">
+                                <h1>Select an Issue <hr></h1>
+                                
+                                <p>The Queue will be shown on a large display
+                                    along with other cruicial information like 
+                                    the estimated wait time and the current wait list.
+                                </p>
+                            </div>
+                            <div class="col-lg-1"></div>
+                            <div class="col-12 col-lg-7 flex-center">
+                                <img class="w-75" src="images/kiosk.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="step2" class="my-5">
+                        <div class="row ">
+                            <div class="col-12 col-lg-4">
+                                <h1>Select an Issue <hr></h1>
+                                
+                                <p>The Queue will be shown on a large display
+                                    along with other cruicial information like 
+                                    the estimated wait time and the current wait list.
+                                </p>
+                            </div>
+                            <div class="col-lg-1"></div>
+                            <div class="col-12 col-lg-7 flex-center">
+                                <img class="w-75" src="images/kiosk.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="step3" class="my-5">
+                        <div class="row ">
+                            <div class="col-12 col-lg-4">
+                                <h1>Select an Issue <hr></h1>
+                                
+                                <p>The Queue will be shown on a large display
+                                    along with other cruicial information like 
+                                    the estimated wait time and the current wait list.
+                                </p>
+                            </div>
+                            <div class="col-lg-1"></div>
+                            <div class="col-12 col-lg-7 flex-center">
+                                <img class="w-75" src="images/kiosk.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="step4" class="my-5">
+                        <div class="row ">
+                            <div class="col-12 col-lg-4">
+                                <h1>Select an Issue <hr></h1>
+                                
+                                <p>The Queue will be shown on a large display
+                                    along with other cruicial information like 
+                                    the estimated wait time and the current wait list.
+                                </p>
+                            </div>
+                            <div class="col-lg-1"></div>
+                            <div class="col-12 col-lg-7 flex-center">
+                                <img class="w-75" src="images/kiosk.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <br><br><br><br><br><br><br><br><br><br>
+
+
+
+
         </div>
         <!-- Section 3 -->
         <div class="section_container container-fluid" id="s3">
-            <div class="col-lg-8">
+            <div class="col-1"></div>
+            <div class="col-lg-3">
+                <h1 class="">Advanced <b>Customization</b> <hr> </h1><br>
+                <p>Qronus is a customizable queue management system that optimizes appointment scheduling.
+            </div>
+            <div class="col-1"></div>
+            <div class="col-lg-6">
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -230,14 +312,11 @@
                 </div>
 
             </div>
-            <div class="col-lg-4">
-                <h1 class="underline_heading">Unlimited <b>Customization</b></h1><br>
-                <p>Qronus is a customizable queue management system that optimizes appointment scheduling.
-            </div>
+            <div class="col-1"></div>
         </div>
 
         <!-- SECTION 4 -->
-        <div class="section_container container-fluid" id="s4">
+        <!-- <div class="section_container container-fluid" id="s4">
             <div class="row">
                 <div class="col-12 col-lg-4 slide" data-aos="slide-up">
                     <div>
@@ -277,7 +356,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <!-- Section 5 -->
         <div id="s5" class="section_container container-fluid">
@@ -307,11 +386,9 @@
 
 
 
-        <!-- jQuery library -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-        <!-- BS JS -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
         <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/75c80322e7.js"></script>
