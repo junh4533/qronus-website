@@ -1,0 +1,23 @@
+{
+  "name": "qronus-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch styles -o styles"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/junh4533/qronus-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/junh4533/qronus-website/issues"
+  },
+  "homepage": "https://github.com/junh4533/qronus-website#readme",
+  "dependencies": {
+    "aos": "^3.0.0-beta.6"
+  }
+}
