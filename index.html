@@ -1,70 +1,76 @@
 <!DOCTYPE html>
-<html<lang="en">
+<html lang="en">
 
-    <head>
+<head>
+    <title>Qronus</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Qronus</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
-        <!-- Favicon -->
-        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-        <link rel="manifest" href="favicon/site.webmanifest">
-        <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
-        <meta name="msapplication-TileColor" content="#da532c">
-        <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 
-        <!-- Bootstrap -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
 
-        <!-- Main CSS -->
-        <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/75c80322e7.js"></script>
 
-        <!-- Font Awesome -->
-        <script src="https://kit.fontawesome.com/75c80322e7.js"></script>
+    <!-- Main JS -->
+    <script src="scripts/main.js" type="text/javascript"></script>
+</head>
 
-        <!-- Main JS -->
-        <script src="scripts/main.js" type="text/javascript"></script>
-    </head>
+<body data-spy="scroll" data-target="#side-nav" data-offset="400">
+    <!-- Navbar-->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark bg-dark fixed-top">
+        <a href="#" class="navbar-brand">
+            <img src="images/logos/qronus-white.png" class="img-fluid" id="logo">
+        </a>
 
-    <body  data-spy="scroll" data-target="#side-nav" data-offset="400">
-        <!-- Navbar-->
-        <!-- <nav class="navbar navbar-expand-sm fixed-top">
-            <a href="#" class="navbar-brand">
-                <img src="images/logos/qronus-white.png" class="img-fluid" id="logo">
-            </a>
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#how-does-it-work">How does it Work?</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#features">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#customization">Customization</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#s5">Pricing</a>
-                    </li>
-                </ul>
-            </div>
-        </nav> -->
-        <!-- Modal -->
-        <!-- <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#how-does-it-work">How does it Work?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#features">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#customization">Customization</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#s5">Pricing</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Modal -->
+    <!-- <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -106,183 +112,132 @@
             </div>
         </div> -->
 
-        <!-- HOME PAGE -->
-        <div class="section-container container-fluid" id="home">
-            <div class="home-text" data-aos="fade-up">
-                <h1><b>Fully Customizable</b> </h1><br>
-                <h1> Queuing System</h1><br><br>
-                <button type="button" class="button-css orange-bg" data-toggle="modal" data-target="#exampleModal">
-                    Request a Demo
-                </button>
+    <!-- HOME PAGE -->
+    <div class="section-container container-fluid d-flex h-100" id="home">
+        <div class="tint"></div>
+
+        <div class="row align-self-center">
+            <div class="col-0 col-md-7 col-xl-8"></div>
+            <div class="col-12 col-md-5 col-xl-4">
+                <div class="home-text text-center" data-aos="fade-up">
+                    <img id="qronus-logo" src="images/logos/qronus-white.png" alt=""><br>
+                    <h2><b>Fully Customizable</b> </h2><br>
+                    <h2> Queuing System</h2><br><br>
+                    <button type="button" class="button-css orange-bg" data-toggle="modal" data-target="#exampleModal">
+                        Request a Demo
+                    </button>
+                </div>
             </div>
         </div>
 
-        <!-- HOW DOES IT WORK? -->
-        <div class="container-fluid" id="how-does-it-work">
-            <div class="row my-5">
-                <div class="col-2">
-                    <nav class="navbar navbar-dark" id="side-nav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#step1">Step 1</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#step2">Step 2</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#step3">Step 3</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#step4">Step 4</a>
-                            </li>
-                        </ul>
-                    </nav>
+    </div>
+
+
+    <!-- HOW DOES IT WORK? -->
+    <div class="container-fluid" id="how-does-it-work">
+        <div class="row my-5">
+            <div class="col-2">
+                <nav class="navbar navbar-dark" id="side-nav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#step1">Step 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#step2">Step 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#step3">Step 3</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#step4">Step 4</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-10 text-left">
+
+                <div class="steps" id="step1" data-aos="fade-up">
+                    <div class="spacer"></div>
+                    <div class="row">
+                        <div class="col-12 col-lg-4 p-5">
+                            <h1 class="mb-5">Select an Issue
+                                <hr>
+                            </h1>
+
+                            <p>The Queue will be shown on a large display
+                                along with other cruicial information like
+                                the estimated wait time and the current wait list.
+                            </p>
+                        </div>
+                        <!-- <div class="col-lg-1"></div> -->
+                        <div class="col-12 col-lg-8 flex-center">
+                            <img class="w-75" src="images/app/kiosk/kiosk-issue.png" alt="">
+                        </div>
+                    </div>
                 </div>
-                <div class="col-10 text-left">
-                    
-                    <div class="steps" id="step1" data-aos="fade-up">
-                        <div class="spacer"></div>
-                        <div class="row">
-                            <div class="col-12 col-lg-4">
-                                <h1>Select an Issue
-                                    <hr>
-                                </h1>
 
-                                <p>The Queue will be shown on a large display
-                                    along with other cruicial information like
-                                    the estimated wait time and the current wait list.
-                                </p>
-                            </div>
-                            <!-- <div class="col-lg-1"></div> -->
-                            <div class="col-12 col-lg-8 flex-center">
-                                <img class="w-75" src="images/app/kiosk/kiosk-issue.png" alt="">
-                            </div>
+                <div class="steps" id="step2" data-aos="fade-up">
+                    <div class="spacer"></div>
+                    <div class="row">
+                        <div class="col-12 col-lg-4 p-5">
+                            <h1 class="mb-5">Swipe Your ID
+                                <hr>
+                            </h1>
+
+                            <p>The Queue will be shown on a large display
+                                along with other cruicial information like
+                                the estimated wait time and the current wait list.
+                            </p>
                         </div>
-                    </div>      
-
-                    <div class="steps" id="step2" data-aos="fade-up">
-                        <div class="spacer"></div>
-                        <div class="row">
-                            <div class="col-12 col-lg-4">
-                                <h1>Swipe Your ID
-                                    <hr>
-                                </h1>
-
-                                <p>The Queue will be shown on a large display
-                                    along with other cruicial information like
-                                    the estimated wait time and the current wait list.
-                                </p>
-                            </div>
-                            <!-- <div class="col-lg-1"></div> -->
-                            <div class="col-12 col-lg-8 flex-center">
-                                <img class="w-75" src="images/app/kiosk/kiosk-swipe.png" alt="">
-                            </div>
-                        </div>  
-                       
-                    </div>
-
-                    <div class="steps" id="step3" data-aos="fade-up">
-                        <div class="spacer"></div>
-                        <div class="row">
-                            <div class="col-12 col-lg-4">
-                                <h1>Enter Phone Number
-                                    <hr>
-                                </h1>
-
-                                <p>The Queue will be shown on a large display
-                                    along with other cruicial information like
-                                    the estimated wait time and the current wait list.
-                                </p>
-                            </div>
-                            <!-- <div class="col-lg-1"></div> -->
-                            <div class="col-12 col-lg-8 flex-center">
-                                <img class="w-75" src="images/app/kiosk/kiosk-text.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="steps" id="step4" data-aos="fade-up">
-                        <div class="spacer"></div>
-                        <div class="row ">
-                            <div class="col-12 col-lg-4">
-                                <h1>Wait to be Called
-                                    <hr>
-                                </h1>
-
-                                <p>The Queue will be shown on a large display
-                                    along with other cruicial information like
-                                    the estimated wait time and the current wait list.
-                                </p>
-                            </div>
-                            <!-- <div class="col-lg-1"></div> -->
-                            <div class="col-12 col-lg-8 flex-center">
-                                <img class="w-75" src="images/app/kiosk/kiosk-wait.png" alt="">
-                            </div>
+                        <!-- <div class="col-lg-1"></div> -->
+                        <div class="col-12 col-lg-8 flex-center">
+                            <img class="w-75" src="images/app/kiosk/kiosk-swipe.png" alt="">
                         </div>
                     </div>
 
                 </div>
-            </div>
-        </div>
 
-        <!-- FEATURES -->
-        <div class="section-container container-fluid" id="features">
-            <div class="row">
-                <div class="col-12 col-lg-4 slide" data-aos="slide-up">
-                    <img src="images/line.png" alt="">
-                    <br><br>
-                    <div class="text-center">
-                        <h3>Skip the Waiting</h3>
-                        <br><br>
-                        <p>
-                            Nobody likes to wait. With Qronus Queueing, customers can utilize wait time productively. 
-                            They can view the current wait time, scheule an appointment, and receive a text message
-                            from anywhere.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-4 slide" data-aos="slide-up">
-                    <img src="images/data.png" alt="">
-                    <br><br>
-                    <div class="text-center">
-                        <h3>Performance Metrics</h3>
-                        <br><br>
-                        <p>
-                            Numbers matter. You can optimize the queue using key performance metrics like clients per period, 
-                            reservation type per period, and average wait times for each type of reservation. 
-                        </p>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-4 slide" data-aos="slide-up">
-                    <img src="images/text.png" alt="">
-                    <br><br>
-                    <div class="text-center">
-                        <h3>Connect Anywhere</h3>
-                        <br><br>
-                        <p>
-                            Nobody likes to wait. With Qronus Queueing, customers can utilize wait time productively. 
-                            They can view the current wait time, scheule an appointment, and receive a text message
-                            from anywhere.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-       
-    
-        <!-- CUSTOMIZATION -->
-        <div class="section-container container-fluid text-center" id="customization">
-            <div class="my-5 text-center">
-                <h1>Advanced <b>Customization</b>
-                    <hr>
-                </h1>
-                <br>
-                <p>Qronus is a customizable queue management system that optimizes appointment scheduling. </p>
-            </div>
-            <img class="w-75" src="images/app/customize.png" alt="">
-        </div>
+                <div class="steps" id="step3" data-aos="fade-up">
+                    <div class="spacer"></div>
+                    <div class="row">
+                        <div class="col-12 col-lg-4 p-5">
+                            <h1 class="mb-5">Enter Phone Number
+                                <hr>
+                            </h1>
 
-        <footer class="text-center">
-            Q-Ronus &copy; 2019 | All Rights Reserved
-        </footer>
-    </body>
+                            <p>The Queue will be shown on a large display
+                                along with other cruicial information like
+                                the estimated wait time and the current wait list.
+                            </p>
+                        </div>
+                        <!-- <div class="col-lg-1"></div> -->
+                        <div class="col-12 col-lg-8 flex-center">
+                            <img class="w-75" src="images/app/kiosk/kiosk-text.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="steps" id="step4" data-aos="fade-up">
+                    <div class="spacer"></div>
+                    <div class="row ">
+                        <div class="col-12 col-lg-4 p-5">
+                            <h1 class="mb-5">Wait to be Called
+                                <hr>
+                            </h1>
+                            <p>The Queue will be shown on a large display
+                                along with other cruicial information like
+                                the estimated wait time and the current wait list.
+                            </p>
+                        </div>
+                        <!-- <div class="col-lg-1"></div> -->
+                        <div class="col-12 col-lg-8 flex-center">
+                            <img class="w-75" src="images/app/kiosk/kiosk-wait.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>

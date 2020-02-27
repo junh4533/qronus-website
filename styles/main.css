@@ -3,6 +3,9 @@ html,
 body {
   scroll-behavior: smooth;
   width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
   background-color: #f7fcff;
   font-family: "Poppins", serif; }
 
@@ -17,7 +20,7 @@ h6 {
   font-weight: bold; }
 
 h1 {
-  font-size: 3rem; }
+  font-size: 2.5rem; }
 
 h2 {
   font-size: 2.5rem; }
@@ -47,6 +50,13 @@ a:hover {
   -webkit-transition-timing-function: ease;
   transition-timing-function: ease; }
 
+.tint {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0; }
+
 .button-css {
   padding: 0.5em 1em;
   border: none;
@@ -58,9 +68,10 @@ a:hover {
   -ms-transition: filter .3s ease;
   -o-transition: filter .3s ease;
   transition: filter .3s ease; }
-  .button-css:hover {
-    box-shadow: inset 0 0 0 99999px rgba(0, 0, 0, 0.25);
-    text-decoration: none; }
+
+.button-css:hover {
+  box-shadow: inset 0 0 0 99999px rgba(0, 0, 0, 0.25);
+  text-decoration: none; }
 
 .orange-bg {
   background: #ff541a; }
@@ -73,11 +84,12 @@ a:hover {
 
 .orange-hr-css {
   display: inline-block; }
-  .orange-hr-css:after {
-    content: "";
-    display: block;
-    border-top: 0.15em solid #ff541a;
-    margin-top: 0.2em; }
+
+.orange-hr-css:after {
+  content: "";
+  display: block;
+  border-top: 0.15em solid #ff541a;
+  margin-top: 0.2em; }
 
 .flex-center {
   display: flex;
@@ -90,8 +102,7 @@ a:hover {
   border-bottom: 0.2em solid #ff541a; }
 
 .section-container {
-  min-height: 100vh;
-  display: flex; }
+  min-height: 100vh; }
 
 i {
   color: #ff541a;
@@ -156,12 +167,14 @@ b {
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh; }
-  #home .home-text {
-    margin-left: auto;
-    margin-right: 5%;
-    flex-direction: row;
-    align-self: center;
-    color: white; }
+
+#home .home-text {
+  position: relative;
+  color: white;
+  z-index: 10; }
+
+#home #qronus-logo {
+  width: 70%; }
 
 #logo {
   max-height: 8vh; }
@@ -173,9 +186,8 @@ b {
 
 /********************** Nav Bar ***********************/
 nav {
-  background: #1b262c;
-  height: 8vh;
-  margin-bottom: 10vh; }
+  background: #1b262cda;
+  font-size: .8rem; }
 
 .nav-link {
   letter-spacing: 1px;
@@ -210,8 +222,10 @@ nav {
 #side-nav {
   position: sticky;
   left: 0;
-  top: 20%;
-  height: 30%; }
+  top: 8%;
+  height: 35%;
+  font-size: 150%;
+  background: rgba(0, 0, 0, 0.7); }
 
 hr {
   position: relative;
@@ -256,3 +270,18 @@ h4 {
 #s5 p {
   font-weight: bolder;
   font-size: 20px; }
+
+@media only screen and (max-width: 767px) {
+  .tint {
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2; } }
+
+@media only screen and (min-width: 1440px) {
+  .nav {
+    font-size: 1rem; } }
+
+@media only screen and (min-width: 2560px) {
+  .home-text {
+    font-size: 150%; }
+  .home-text h2 {
+    font-size: 4rem; } }
