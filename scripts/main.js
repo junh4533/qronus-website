@@ -15,8 +15,9 @@ $(document).ready(function () {
 
   });
 
-  // $('#how-does-it-work').scroll(function () {
-  //   AOS.refresh();
-  // });
+  // const vh = document.body.clientHeight,
+  // vw = document.body.clientWidth;
+
+  // const roll = new Roll (vh);
 
 });
