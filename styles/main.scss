@@ -10,6 +10,7 @@ body {
     margin: 0;
     background-color: $primary-bg;
     font-family: $font-family;
+    font-size: 20px;
 }
 
 h1,
@@ -19,12 +20,14 @@ h4,
 h5,
 h6 {
     display: inline-block;
-    color: $orange;
+    // color: $orange;
+    color: rgb(52,58,64);
     font-weight: bold;
 }
 
 h1 {
     font-size: 2.5rem;
+    margin: 10vh auto;
 }
 
 h2 {
@@ -48,20 +51,24 @@ p {
     font-size: 1rem;
 }
 
+p {
+    color: rgba(52, 58, 64, 0.75);
+}
+
 // smooth hover effects for all icons, buttons, and links 
 .orange-bg-css,
 .orange-text-css,
 .button-css,
 .fa,
 a {
-  &:hover {
-    -webkit-transition-property: all;
-    transition-property: all;
-    -webkit-transition-duration: .3s;
-    transition-duration: .3s;
-    -webkit-transition-timing-function: ease;
-    transition-timing-function: ease;
-  }
+    &:hover {
+        -webkit-transition-property: all;
+        transition-property: all;
+        -webkit-transition-duration: .3s;
+        transition-duration: .3s;
+        -webkit-transition-timing-function: ease;
+        transition-timing-function: ease;
+    }
 }
 
 .tint {
@@ -81,36 +88,22 @@ a {
     color: white;
     border-radius: 4px;
     @include transition('filter .3s ease');
-  
+
     // darkens button on hover 
     &:hover {
-      box-shadow: inset 0 0 0 99999px rgba(0, 0, 0, .25);
-      text-decoration: none;
-      // color: white;
+        box-shadow: inset 0 0 0 99999px rgba(0, 0, 0, .25);
+        text-decoration: none;
+        // color: white;
     }
-  }
+}
 
-  .orange-bg {
+.orange-bg {
     background: $orange;
-  }
+}
 
-  .hr-css {
-    height: 0;
-    border: none;
-    display: inline-block;
-    width: 70%;
-  }
-  
-  .orange-hr-css {
-    display: inline-block;
-  
-    &:after {
-      content: "";
-      display: block;
-      border-top: 0.15em solid $orange;
-      margin-top: 0.2em;
-    }
-  }
+.secondary-font {
+    color: $secondary-font;
+}
 
 .flex-center {
     display: flex;
@@ -118,14 +111,10 @@ a {
     align-items: center;
 }
 
-.underline_heading {
-    display: inline-block;
-    padding-bottom: 1%;
-    border-bottom: .2em solid $orange;
-}
-
 .section-container {
     min-height: 100vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
 }
 
 i {
@@ -137,6 +126,18 @@ b {
     color: $orange;
 }
 
+.orange-hr {
+    position: relative;
+    width: 80%;
+    margin: .3em 0 0 0;
+    border-top: .2em solid $orange;
+    border-radius: 1em;
+}
+
+.center-hr {
+    margin: .3em auto !important;
+}
+
 /********************** HOME PAGE ***********************/
 #home {
     background-image: url("../images/qronus-scene.png");
@@ -144,33 +145,25 @@ b {
     background-repeat: no-repeat;
     height: 100vh;
 
-    .home-text{
+    .home-text {
         position: relative;
         color: white;
         z-index: 10;
     }
-    #qronus-logo{
+
+    #qronus-logo {
         width: 70%;
     }
-}
-
-
-#logo {
-    max-height: 8vh;
-}
-
-#waiting {
-    max-width: 90%;
-    max-height: 90%;
-    object-fit: contain;
 }
 
 /********************** Nav Bar ***********************/
 nav {
     background: #1b262cda;
     font-size: .8rem;
-    // height: 8vh;
-    // margin-bottom: 10vh;
+    
+    #logo {
+        max-height: 8vh;
+    }
 }
 
 .nav-link {
@@ -184,68 +177,34 @@ nav {
     color: $orange;
 }
 
-/********************** Section 2 CSS ***********************/
-
-#carousel_img {
-    width: auto;
-    height: 60vh;
-}
-
-#how-does-it-work {
-    background: #f7f9ff;;
-    text-align: center;
-    position: relative;
-    height: 300vh;
-    // scroll-behavior: smooth;
-}
-
-#how-does-it-work::-webkit-scrollbar {
-    display: none;
-}
-
-.steps{
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-}
-
-.spacer {
-    height:10vh;
-}
-
-#side-nav {
-    position: sticky;
-    left: 0;
-    top: 8%;
-    height: 35%;
-    font-size: 150%;
-    background: rgba(255, 127, 42, 0.9);
-}
-
-hr {
-    position: relative;
-    width: 80%;
-    margin: .5em 0 0 0;
-    border-top: .2em solid $orange;
+/********************** ABOUT SECTION ***********************/
+#about {
+    #line-img {
+        position: relative;
+        width: 100%;
+        // right: 1em;
+    }
 }
 
 /********************** Section 3 CSS ***********************/
-#features{
+#features {
+    background: rgb(246,249,252);
+    background: white;
     img {
-        width:80%;
+        width: 80%;
     }
-    .col-6 {
 
-    }
     .circle {
-        width:25vw;
-        height: 25vw;
-        background: rgba(255, 109, 11, 0.548);
+        width: 20vw;
+        height: 20vw;
+        background: #7FDBFF;
         border-radius: 50%;
         margin: auto;
         display: flex;
         justify-content: center;
+
         &:after {
-            content:  " ";
+            content: " ";
             position: absolute;
             height: inherit;
             width: inherit;
@@ -280,18 +239,43 @@ h4 {
 }
 
 
+/********************** HOW DOES IT WORK SECTION ***********************/
+
+#how-does-it-work {
+    background: #f7f9ff;
+    text-align: center;
+    position: relative;
+
+    img{
+        width: 90%;
+        box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+    }
+
+    .steps {
+        // min-height: 50vh;
+        margin-bottom: 10vh;
+        // height: 10vh;
+    }
+}
+
+#side-nav {
+    position: sticky;
+    left: 0;
+    top: 8%;
+    height: 35%;
+    font-size: 150%;
+    background: rgba(255, 127, 42, 0.9);
+}
 
 /********************** Section 4 CSS ***********************/
 
 #customization {
     text-align: center;
-    height: 100vh;
-    background: pink;
-}
 
-#customization .slide img {
-    width: 100%;
-    object-fit: contain;
+    #customize-img {
+        width: 70%;
+        // margin: 10vh auto;
+    }
 }
 
 /* s5 Section */
@@ -315,31 +299,30 @@ h4 {
 
 @media only screen and (min-width: 2560px) {
     .home-text {
-        font-size:150%;
+        font-size: 150%;
+
         h2 {
             font-size: 4rem;
         }
     }
 }
 
-// input{
-//     background: transparent;
-//     border: none;
-//     border-bottom: 1px solid #000000;
-// }
-
 #contact {
     background: rgb(24, 24, 24);
+
     #form-container {
         background: rgb(48, 84, 184);
         height: 50vh;
         width: 50%;
+
         .row {
             height: 100%;
         }
+
         border-radius: 1em;
     }
-    #contact-bg{
+
+    #contact-bg {
         background-image: url('../images/text-bg.png');
         background-size: cover;
         background-position: center;
@@ -352,4 +335,3 @@ h4 {
     }
 
 }
-

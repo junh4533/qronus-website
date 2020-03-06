@@ -18,6 +18,51 @@ $(document).ready(function () {
   // const vh = document.body.clientHeight,
   // vw = document.body.clientWidth;
 
-  // const roll = new Roll (vh);
+  $('#scroll-content').WS_ScroLi({
+    validEnd: {
+      status: true,
+      icon: 'fas fa-check'
+    },
+    // you can enter any selector you want and assign it an icon from fontawesome library
+    sections: [
+      // ['#how-does-it-work', ''],
+      ['#step1', 'fa fa-info'],
+      ['#step2', 'fa fa-id-card-o'],
+      ['#step3', 'fa fa-mobile'],
+    ],
+    position: {
+      x: ['left', 20],
+      y: ['top', 20]
+    },
+    icon: {
+      size: 60,
+      borderWidth: 1,
+      borderRadius: 100,
+      color: '#FF541A',
+      colorPast: '#FF6E0B',
+      colorOff: 'grey'
+    },
+    line: {
+      height: 30,
+      width: 3,
+      color: '#FF6E0B',
+      colorPast: '#FF6E0B',
+      colorOff: 'grey',
+    }
+  });
+
+  function isElementInViewport(el) {
+    var rect = el.getBoundingClientRect();
+    console.log(rect);
+    console.log (
+      // rect.top >= 0 &&
+      // rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document. documentElement.clientHeight)
+      // rect.right <= (window.innerWidth || document. documentElement.clientWidth)
+    );
+  }
+// 
+  // if 
+  isElementInViewport(document.getElementById('customize-header'));
 
 });

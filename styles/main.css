@@ -7,7 +7,8 @@ body {
   padding: 0;
   margin: 0;
   background-color: #f7fcff;
-  font-family: "Poppins", serif; }
+  font-family: "Poppins", serif;
+  font-size: 20px; }
 
 h1,
 h2,
@@ -16,11 +17,12 @@ h4,
 h5,
 h6 {
   display: inline-block;
-  color: #ff541a;
+  color: #343a40;
   font-weight: bold; }
 
 h1 {
-  font-size: 2.5rem; }
+  font-size: 2.5rem;
+  margin: 10vh auto; }
 
 h2 {
   font-size: 2.5rem; }
@@ -37,6 +39,9 @@ h5 {
 h6,
 p {
   font-size: 1rem; }
+
+p {
+  color: rgba(52, 58, 64, 0.75); }
 
 .orange-bg-css:hover,
 .orange-text-css:hover,
@@ -76,33 +81,18 @@ a:hover {
 .orange-bg {
   background: #ff541a; }
 
-.hr-css {
-  height: 0;
-  border: none;
-  display: inline-block;
-  width: 70%; }
-
-.orange-hr-css {
-  display: inline-block; }
-
-.orange-hr-css:after {
-  content: "";
-  display: block;
-  border-top: 0.15em solid #ff541a;
-  margin-top: 0.2em; }
+.secondary-font {
+  color: #52a5ff; }
 
 .flex-center {
   display: flex;
   justify-content: center;
   align-items: center; }
 
-.underline_heading {
-  display: inline-block;
-  padding-bottom: 1%;
-  border-bottom: 0.2em solid #ff541a; }
-
 .section-container {
-  min-height: 100vh; }
+  min-height: 100vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh; }
 
 i {
   color: #ff541a;
@@ -110,6 +100,16 @@ i {
 
 b {
   color: #ff541a; }
+
+.orange-hr {
+  position: relative;
+  width: 80%;
+  margin: .3em 0 0 0;
+  border-top: 0.2em solid #ff541a;
+  border-radius: 1em; }
+
+.center-hr {
+  margin: .3em auto !important; }
 
 /********************** HOME PAGE ***********************/
 #home {
@@ -126,18 +126,13 @@ b {
 #home #qronus-logo {
   width: 70%; }
 
-#logo {
-  max-height: 8vh; }
-
-#waiting {
-  max-width: 90%;
-  max-height: 90%;
-  object-fit: contain; }
-
 /********************** Nav Bar ***********************/
 nav {
   background: #1b262cda;
   font-size: .8rem; }
+
+nav #logo {
+  max-height: 8vh; }
 
 .nav-link {
   letter-spacing: 1px;
@@ -148,49 +143,23 @@ nav {
 .nav-link:hover {
   color: #ff541a; }
 
-/********************** Section 2 CSS ***********************/
-#carousel_img {
-  width: auto;
-  height: 60vh; }
-
-#how-does-it-work {
-  background: #f7f9ff;
-  text-align: center;
+/********************** ABOUT SECTION ***********************/
+#about #line-img {
   position: relative;
-  height: 300vh; }
-
-#how-does-it-work::-webkit-scrollbar {
-  display: none; }
-
-.steps {
-  margin-top: 10vh;
-  margin-bottom: 10vh; }
-
-.spacer {
-  height: 10vh; }
-
-#side-nav {
-  position: sticky;
-  left: 0;
-  top: 8%;
-  height: 35%;
-  font-size: 150%;
-  background: rgba(255, 127, 42, 0.9); }
-
-hr {
-  position: relative;
-  width: 80%;
-  margin: .5em 0 0 0;
-  border-top: 0.2em solid #ff541a; }
+  width: 100%; }
 
 /********************** Section 3 CSS ***********************/
+#features {
+  background: #f6f9fc;
+  background: white; }
+
 #features img {
   width: 80%; }
 
 #features .circle {
-  width: 25vw;
-  height: 25vw;
-  background: rgba(255, 109, 11, 0.548);
+  width: 20vw;
+  height: 20vw;
+  background: #7FDBFF;
   border-radius: 50%;
   margin: auto;
   display: flex;
@@ -223,15 +192,33 @@ hr {
 h4 {
   text-align: center; }
 
+/********************** HOW DOES IT WORK SECTION ***********************/
+#how-does-it-work {
+  background: #f7f9ff;
+  text-align: center;
+  position: relative; }
+
+#how-does-it-work img {
+  width: 90%;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.5); }
+
+#how-does-it-work .steps {
+  margin-bottom: 10vh; }
+
+#side-nav {
+  position: sticky;
+  left: 0;
+  top: 8%;
+  height: 35%;
+  font-size: 150%;
+  background: rgba(255, 127, 42, 0.9); }
+
 /********************** Section 4 CSS ***********************/
 #customization {
-  text-align: center;
-  height: 100vh;
-  background: pink; }
+  text-align: center; }
 
-#customization .slide img {
-  width: 100%;
-  object-fit: contain; }
+#customization #customize-img {
+  width: 70%; }
 
 /* s5 Section */
 #s5 p {
