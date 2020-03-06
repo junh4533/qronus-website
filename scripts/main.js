@@ -51,18 +51,19 @@ $(document).ready(function () {
     }
   });
 
-  function isElementInViewport(el) {
-    var rect = el.getBoundingClientRect();
-    console.log(rect);
-    console.log (
-      // rect.top >= 0 &&
-      // rect.left >= 0 &&
-      rect.bottom <= (window.innerHeight || document. documentElement.clientHeight)
-      // rect.right <= (window.innerWidth || document. documentElement.clientWidth)
-    );
+  function isElementInViewport(element) {
+    return element.getBoundingClientRect().bottom <= (window.innerHeight || document. documentElement.clientHeight)
   }
-// 
-  // if 
-  isElementInViewport(document.getElementById('customize-header'));
+
+  document.body.addEventListener("scroll", function() {
+    if (isElementInViewport(document.getElementById('customize-header'))) {
+      console.log("hide");
+      document.getElementById('WS-ScroLi').style.display = "none";
+    }
+  }
+  );
+
+
+  
 
 });
