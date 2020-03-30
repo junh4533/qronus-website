@@ -1,0 +1,29 @@
+#contact {
+    background: rgb(24, 24, 24);
+
+    #form-container {
+        background: rgb(48, 84, 184);
+        height: 50vh;
+        width: 50%;
+
+        .row {
+            height: 100%;
+        }
+
+        border-radius: 1em;
+    }
+
+    #contact-bg {
+        background-image: url('../images/messages.png');
+        background-color: $orange;
+        background-size: cover;
+        background-position: center;
+        border-radius: 1em 0 0 1em;
+    }
+
+    #contact-form {
+        width: 80%;
+        margin: 1em auto;
+    }
+
+}

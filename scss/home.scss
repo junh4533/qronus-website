@@ -1,0 +1,38 @@
+#home {
+    background-image: url("../images/scenes/qronus-scene-cropped.png");
+    background-size: auto 45%;
+    background-position: 0 12%;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+    .home-text {
+        position: relative;
+        color: white;
+        z-index: 10;
+    }
+
+    #qronus-logo {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    #home {
+        background-size: auto 55%;
+        background-position: 0 15%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #home {
+        background-size: auto 75%;
+        background-position: 0 22%;
+    }
+}
+
+@media only screen and (min-width: 1650px) {
+    #home {
+        background-size: auto 93%;
+        background-position: 0 90%;
+    }
+}

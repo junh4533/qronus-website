@@ -32,7 +32,7 @@ $(document).ready(function () {
     ],
     position: {
       x: ['left', 20],
-      y: ['top', 20]
+      y: ['top', 100]
     },
     icon: {
       size: 60,
@@ -60,10 +60,19 @@ $(document).ready(function () {
       console.log("hide");
       document.getElementById('WS-ScroLi').style.display = "none";
     }
-  }
-  );
+  });
 
-
+  document.getElementById("pageToggle").addEventListener("click", function() {
+    if(document.getElementById("pageToggle").checked) {
+      $(".business-container").css("display", "none");
+      $(".customer-container").css("display", "block");
+      $("section").css("background-color", "rgb(23,17,66)");
+    } else {
+      $(".customer-container").css("display", "none");
+      $(".business-container").css("display", "block");
+      $("section").css("background-color", "rgb(241,241,241)");
+    }
+  });
   
 
 });
